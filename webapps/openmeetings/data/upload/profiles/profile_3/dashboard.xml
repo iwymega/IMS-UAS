@@ -1,0 +1,40 @@
+<dashboard>
+  <id>default</id>
+  <title>Default</title>
+  <columnCount>2</columnCount>
+  <widgets>
+    <org.apache.openmeetings.web.user.dashboard.WelcomeWidget>
+      <id>WelcomeWidget</id>
+      <title>Welcome</title>
+      <collapsed>false</collapsed>
+      <settings/>
+      <location>
+        <column>0</column>
+        <row>0</row>
+      </location>
+    </org.apache.openmeetings.web.user.dashboard.WelcomeWidget>
+    <org.apache.openmeetings.web.user.dashboard.MyRoomsWidget>
+      <id>MyRoomsWidget</id>
+      <title>My Rooms</title>
+      <collapsed>false</collapsed>
+      <settings/>
+      <location>
+        <column>0</column>
+        <row>1</row>
+      </location>
+    </org.apache.openmeetings.web.user.dashboard.MyRoomsWidget>
+    <org.apache.openmeetings.web.user.dashboard.StartWidget>
+      <id>StartWidget</id>
+      <title>Getting Started</title>
+      <collapsed>false</collapsed>
+      <settings/>
+      <location>
+        <column>1</column>
+        <row>0</row>
+      </location>
+    </org.apache.openmeetings.web.user.dashboard.StartWidget>
+  </widgets>
+  <widgetRssDeleted>false</widgetRssDeleted>
+  <widgetMyRoomsDeleted>false</widgetMyRoomsDeleted>
+  <widgetAdminDeleted>false</widgetAdminDeleted>
+</dashboard>

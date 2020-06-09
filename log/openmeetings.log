@@ -1,0 +1,934 @@
+DEBUG 06-09 00:09:25.537 o.a.o.s.q.s.ReminderJob:94 [ean#0_Worker-10] - Rss disabled by Admin
+DEBUG 06-09 00:19:25.670 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-4] - Rss disabled by Admin
+DEBUG 06-09 00:29:22.083 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-1] - getActiveLdapConfigs
+DEBUG 06-09 00:29:26.028 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-6] - Rss disabled by Admin
+DEBUG 06-09 00:37:42.989 o.a.o.d.d.u.UserDao:640 [0.0-5080-exec-7] - login:: 1 users were found
+DEBUG 06-09 00:37:44.104 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-7] - Level Login :: [GRANTED]
+DEBUG 06-09 00:37:44.204 o.a.o.d.d.u.UserDao:657 [0.0-5080-exec-7] - loginUser [GroupUser [id=2, moderator=false, group=Group [id=1, name=ims-openmeetings, deleted=false], user=User [id=3, firstname=Yan, lastname=Kek, login=yankek8, pictureuri=null, deleted=false, languageId=16, address=Address [id=3, country=, street=null, town=null, zip=null, deleted=false, email=yankek8@gmail.com, phone=null], externalId=null, externalType=null, type=user]]]
+DEBUG 06-09 00:37:44.320 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-7] - Level Admin :: [DENIED]
+DEBUG 06-09 00:37:44.594 o.a.o.w.p.MainPage:66 [0.0-5080-exec-8] - MainPage::delayedLoad
+DEBUG 06-09 00:37:44.709 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-8] - Level Admin :: [DENIED]
+DEBUG 06-09 00:37:44.712 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-8] - Level GroupAdmin :: [DENIED]
+DEBUG 06-09 00:37:44.727 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-8] - Level Admin :: [DENIED]
+DEBUG 06-09 00:37:44.729 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-8] - Level Admin :: [DENIED]
+DEBUG 06-09 00:37:48.139 o.a.o.w.a.ClientManager:94 [0.0-5080-exec-6] - Adding online client: c29ca284-2e65-43af-8405-0ca3ea184b34, room: null
+DEBUG 06-09 00:37:48.174 o.a.o.w.c.MainPanel:156 [0.0-5080-exec-6] - WebSocketBehavior::onConnect [uid: c29ca284-2e65-43af-8405-0ca3ea184b34, session: D0F9A58DCC12DC9835920635B6DACDFA, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@1]
+DEBUG 06-09 00:37:48.307 o.a.o.w.p.MainPage:101 [0.0-5080-exec-1] - MainPage::onParameterArrival
+DEBUG 06-09 00:37:48.335 o.a.o.w.c.MainPanel:165 [0.0-5080-exec-7] - WebSocketBehavior:: pingTimer is attached
+DEBUG 06-09 00:37:48.476 o.a.o.w.p.MainPage:52 [.0-5080-exec-10] - MainPage::areaBehavior
+DEBUG 06-09 00:37:48.878 o.a.o.w.c.MainPanel:418 [.0-5080-exec-10] - updateContents:: npanels IS null ? false, client IS null ? false
+DEBUG 06-09 00:37:49.179 o.a.o.d.d.r.RoomDao:245 [.0-5080-exec-10] - getUserRoom : 3 || conference
+DEBUG 06-09 00:37:49.270 o.a.o.d.d.r.RoomDao:245 [.0-5080-exec-10] - getUserRoom : 3 || presentation
+DEBUG 06-09 00:37:49.306 o.a.o.d.d.r.RoomDao:181 [.0-5080-exec-10] - getAppointedRoomsByUser : UserID - 3
+DEBUG 06-09 00:38:12.845 o.a.o.w.p.MainPage:101 [0.0-5080-exec-4] - MainPage::onParameterArrival
+DEBUG 06-09 00:38:16.185 o.a.o.w.a.ClientManager:194 [0.0-5080-exec-5] - Removing online room client: c29ca284-2e65-43af-8405-0ca3ea184b34, room: null
+DEBUG 06-09 00:38:16.187 o.a.o.w.a.ClientManager:149 [0.0-5080-exec-5] - Removing online client: c29ca284-2e65-43af-8405-0ca3ea184b34, roomId: null
+DEBUG 06-09 00:38:16.264 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-8] - getActiveLdapConfigs
+DEBUG 06-09 00:38:16.374 o.a.o.w.c.MainPanel:200 [.0-5080-exec-10] - WebSocketBehavior::closeHandler [uid: c29ca284-2e65-43af-8405-0ca3ea184b34, session: D0F9A58DCC12DC9835920635B6DACDFA, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@1]
+DEBUG 06-09 00:39:15.035 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-2] - getActiveLdapConfigs
+DEBUG 06-09 00:39:25.546 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-9] - Rss disabled by Admin
+DEBUG 06-09 00:42:33.565 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-3] - getActiveLdapConfigs
+DEBUG 06-09 00:42:33.795 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-2] - getActiveLdapConfigs
+DEBUG 06-09 00:49:25.590 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-5] - Rss disabled by Admin
+DEBUG 06-09 00:49:57.575 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-4] - getActiveLdapConfigs
+DEBUG 06-09 00:54:47.017 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-8] - getActiveLdapConfigs
+DEBUG 06-09 00:55:50.658 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-6] - getActiveLdapConfigs
+DEBUG 06-09 00:56:42.676 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-2] - getActiveLdapConfigs
+DEBUG 06-09 00:59:25.604 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-5] - Rss disabled by Admin
+DEBUG 06-09 01:02:31.950 o.a.o.d.d.s.LdapConfigDao:70 [.0-5080-exec-10] - getActiveLdapConfigs
+DEBUG 06-09 01:06:04.806 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-3] - getActiveLdapConfigs
+DEBUG 06-09 01:07:20.870 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-3] - getActiveLdapConfigs
+DEBUG 06-09 01:09:25.557 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-5] - Rss disabled by Admin
+DEBUG 06-09 01:19:25.576 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-09 01:26:53.550 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-2] - getActiveLdapConfigs
+DEBUG 06-09 01:26:53.822 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-1] - getActiveLdapConfigs
+DEBUG 06-09 01:26:59.932 o.a.o.d.d.u.UserDao:640 [0.0-5080-exec-1] - login:: 1 users were found
+DEBUG 06-09 01:27:01.157 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-1] - Level Login :: [GRANTED]
+DEBUG 06-09 01:27:01.211 o.a.o.d.d.u.UserDao:657 [0.0-5080-exec-1] - loginUser [GroupUser [id=1, moderator=false, group=Group [id=1, name=ims-openmeetings, deleted=false], user=User [id=1, firstname=Wayan, lastname=Megantara, login=iwymega@gmail.com, pictureuri=profile.png, deleted=false, languageId=16, address=Address [id=1, country=US, street=null, town=null, zip=null, deleted=false, email=iwymega@gmail.com, phone=null], externalId=null, externalType=null, type=user]]]
+DEBUG 06-09 01:27:01.331 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-1] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:27:03.160 o.a.o.w.p.MainPage:66 [0.0-5080-exec-4] - MainPage::delayedLoad
+DEBUG 06-09 01:27:05.145 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-4] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:27:05.881 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-4] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:27:06.053 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-4] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:27:12.366 o.a.o.w.a.ClientManager:94 [0.0-5080-exec-7] - Adding online client: 865811ee-7b20-4464-bbea-22f2b096a74a, room: null
+DEBUG 06-09 01:27:12.378 o.a.o.w.c.MainPanel:156 [0.0-5080-exec-7] - WebSocketBehavior::onConnect [uid: 865811ee-7b20-4464-bbea-22f2b096a74a, session: D902E1F067D0588A16FDDDF98380C6B3, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@2]
+DEBUG 06-09 01:27:12.437 o.a.o.w.p.MainPage:101 [0.0-5080-exec-1] - MainPage::onParameterArrival
+DEBUG 06-09 01:27:12.450 o.a.o.w.c.MainPanel:165 [0.0-5080-exec-9] - WebSocketBehavior:: pingTimer is attached
+DEBUG 06-09 01:27:12.694 o.a.o.w.p.MainPage:52 [.0-5080-exec-10] - MainPage::areaBehavior
+DEBUG 06-09 01:27:12.924 o.a.o.w.c.MainPanel:418 [.0-5080-exec-10] - updateContents:: npanels IS null ? false, client IS null ? false
+DEBUG 06-09 01:27:13.881 o.a.o.d.d.r.RoomDao:245 [.0-5080-exec-10] - getUserRoom : 1 || conference
+DEBUG 06-09 01:27:13.900 o.a.o.d.d.r.RoomDao:245 [.0-5080-exec-10] - getUserRoom : 1 || presentation
+DEBUG 06-09 01:27:13.919 o.a.o.d.d.r.RoomDao:181 [.0-5080-exec-10] - getAppointedRoomsByUser : UserID - 1
+DEBUG 06-09 01:27:42.614 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-7] - Sending WebSocket PING
+DEBUG 06-09 01:28:12.660 o.a.o.w.c.MainPanel:118 [.0-5080-exec-10] - Sending WebSocket PING
+DEBUG 06-09 01:28:42.719 o.a.o.w.c.MainPanel:118 [.0-5080-exec-10] - Sending WebSocket PING
+DEBUG 06-09 01:29:12.753 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-3] - Sending WebSocket PING
+DEBUG 06-09 01:29:25.530 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-5] - Rss disabled by Admin
+DEBUG 06-09 01:29:43.516 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-6] - Sending WebSocket PING
+DEBUG 06-09 01:30:14.518 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-1] - Sending WebSocket PING
+DEBUG 06-09 01:30:45.536 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-4] - Sending WebSocket PING
+DEBUG 06-09 01:31:09.053 o.a.o.w.c.MainPanel:200 [0.0-5080-exec-2] - WebSocketBehavior::closeHandler [uid: 865811ee-7b20-4464-bbea-22f2b096a74a, session: D902E1F067D0588A16FDDDF98380C6B3, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@2]
+DEBUG 06-09 01:31:09.230 o.a.o.w.a.ClientManager:194 [0.0-5080-exec-2] - Removing online room client: 865811ee-7b20-4464-bbea-22f2b096a74a, room: null
+DEBUG 06-09 01:31:09.294 o.a.o.w.a.ClientManager:149 [0.0-5080-exec-2] - Removing online client: 865811ee-7b20-4464-bbea-22f2b096a74a, roomId: null
+DEBUG 06-09 01:31:10.301 o.a.o.w.p.MainPage:66 [0.0-5080-exec-8] - MainPage::delayedLoad
+DEBUG 06-09 01:31:10.371 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-8] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:31:10.405 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-8] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:31:10.451 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-8] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:31:13.953 o.a.o.w.a.ClientManager:94 [0.0-5080-exec-2] - Adding online client: a2d96236-86f4-4b34-913f-64d096c546d4, room: null
+DEBUG 06-09 01:31:13.989 o.a.o.w.c.MainPanel:156 [0.0-5080-exec-2] - WebSocketBehavior::onConnect [uid: a2d96236-86f4-4b34-913f-64d096c546d4, session: D902E1F067D0588A16FDDDF98380C6B3, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@3]
+DEBUG 06-09 01:31:14.024 o.a.o.w.p.MainPage:101 [0.0-5080-exec-8] - MainPage::onParameterArrival
+DEBUG 06-09 01:31:14.247 o.a.o.w.c.MainPanel:165 [0.0-5080-exec-1] - WebSocketBehavior:: pingTimer is attached
+DEBUG 06-09 01:31:14.314 o.a.o.w.p.MainPage:52 [0.0-5080-exec-4] - MainPage::areaBehavior
+DEBUG 06-09 01:31:14.331 o.a.o.w.c.MainPanel:418 [0.0-5080-exec-4] - updateContents:: npanels IS null ? false, client IS null ? false
+DEBUG 06-09 01:31:14.751 o.a.o.d.d.r.RoomDao:245 [0.0-5080-exec-4] - getUserRoom : 1 || conference
+DEBUG 06-09 01:31:14.778 o.a.o.d.d.r.RoomDao:245 [0.0-5080-exec-4] - getUserRoom : 1 || presentation
+DEBUG 06-09 01:31:14.788 o.a.o.d.d.r.RoomDao:181 [0.0-5080-exec-4] - getAppointedRoomsByUser : UserID - 1
+DEBUG 06-09 01:31:44.513 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-6] - Sending WebSocket PING
+DEBUG 06-09 01:31:49.660 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-5] - getActiveLdapConfigs
+DEBUG 06-09 01:32:14.557 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-9] - Sending WebSocket PING
+DEBUG 06-09 01:32:44.609 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-5] - Sending WebSocket PING
+DEBUG 06-09 01:33:14.683 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-9] - Sending WebSocket PING
+DEBUG 06-09 01:33:44.742 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-4] - Sending WebSocket PING
+DEBUG 06-09 01:33:54.302 o.a.o.w.c.MainPanel:200 [0.0-5080-exec-5] - WebSocketBehavior::closeHandler [uid: a2d96236-86f4-4b34-913f-64d096c546d4, session: D902E1F067D0588A16FDDDF98380C6B3, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@3]
+DEBUG 06-09 01:33:54.403 o.a.o.w.a.ClientManager:194 [0.0-5080-exec-5] - Removing online room client: a2d96236-86f4-4b34-913f-64d096c546d4, room: null
+DEBUG 06-09 01:33:54.420 o.a.o.w.a.ClientManager:149 [0.0-5080-exec-5] - Removing online client: a2d96236-86f4-4b34-913f-64d096c546d4, roomId: null
+DEBUG 06-09 01:33:55.002 o.a.o.w.p.MainPage:66 [0.0-5080-exec-6] - MainPage::delayedLoad
+DEBUG 06-09 01:33:55.033 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-6] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:33:55.049 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-6] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:33:55.050 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-6] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:33:57.115 o.a.o.w.a.ClientManager:94 [0.0-5080-exec-7] - Adding online client: 859c7812-bbc5-43c5-a447-5eb6bddbd56a, room: null
+DEBUG 06-09 01:33:57.212 o.a.o.w.c.MainPanel:156 [0.0-5080-exec-7] - WebSocketBehavior::onConnect [uid: 859c7812-bbc5-43c5-a447-5eb6bddbd56a, session: D902E1F067D0588A16FDDDF98380C6B3, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@5]
+DEBUG 06-09 01:33:57.218 o.a.o.w.p.MainPage:101 [0.0-5080-exec-9] - MainPage::onParameterArrival
+DEBUG 06-09 01:33:57.556 o.a.o.w.c.MainPanel:165 [0.0-5080-exec-2] - WebSocketBehavior:: pingTimer is attached
+DEBUG 06-09 01:33:57.578 o.a.o.w.p.MainPage:52 [0.0-5080-exec-4] - MainPage::areaBehavior
+DEBUG 06-09 01:33:57.604 o.a.o.w.c.MainPanel:418 [0.0-5080-exec-4] - updateContents:: npanels IS null ? false, client IS null ? false
+DEBUG 06-09 01:33:57.906 o.a.o.d.d.r.RoomDao:245 [0.0-5080-exec-4] - getUserRoom : 1 || conference
+DEBUG 06-09 01:33:57.914 o.a.o.d.d.r.RoomDao:245 [0.0-5080-exec-4] - getUserRoom : 1 || presentation
+DEBUG 06-09 01:33:57.918 o.a.o.d.d.r.RoomDao:181 [0.0-5080-exec-4] - getAppointedRoomsByUser : UserID - 1
+DEBUG 06-09 01:34:28.516 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-6] - Sending WebSocket PING
+DEBUG 06-09 01:34:59.513 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-6] - Sending WebSocket PING
+DEBUG 06-09 01:35:29.573 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-1] - Sending WebSocket PING
+DEBUG 06-09 01:35:59.629 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-9] - Sending WebSocket PING
+DEBUG 06-09 01:36:19.093 o.a.o.w.p.MainPage:66 [0.0-5080-exec-2] - MainPage::delayedLoad
+DEBUG 06-09 01:36:19.109 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-2] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:36:19.128 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-2] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:36:19.145 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-2] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:36:21.552 o.a.o.w.a.ClientManager:94 [0.0-5080-exec-6] - Adding online client: ae9c4fd3-5184-4d10-b165-608df8c756c6, room: null
+DEBUG 06-09 01:36:21.574 o.a.o.w.c.MainPanel:156 [0.0-5080-exec-6] - WebSocketBehavior::onConnect [uid: ae9c4fd3-5184-4d10-b165-608df8c756c6, session: D902E1F067D0588A16FDDDF98380C6B3, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@6]
+DEBUG 06-09 01:36:21.653 o.a.o.w.p.MainPage:101 [0.0-5080-exec-2] - MainPage::onParameterArrival
+DEBUG 06-09 01:36:21.817 o.a.o.w.c.MainPanel:165 [0.0-5080-exec-1] - WebSocketBehavior:: pingTimer is attached
+DEBUG 06-09 01:36:21.925 o.a.o.w.p.MainPage:52 [0.0-5080-exec-7] - MainPage::areaBehavior
+DEBUG 06-09 01:36:21.936 o.a.o.w.c.MainPanel:418 [0.0-5080-exec-7] - updateContents:: npanels IS null ? false, client IS null ? false
+DEBUG 06-09 01:36:22.242 o.a.o.d.d.r.RoomDao:245 [0.0-5080-exec-7] - getUserRoom : 1 || conference
+DEBUG 06-09 01:36:22.282 o.a.o.d.d.r.RoomDao:245 [0.0-5080-exec-7] - getUserRoom : 1 || presentation
+DEBUG 06-09 01:36:22.291 o.a.o.d.d.r.RoomDao:181 [0.0-5080-exec-7] - getAppointedRoomsByUser : UserID - 1
+DEBUG 06-09 01:36:26.424 o.a.o.w.c.MainPanel:200 [0.0-5080-exec-3] - WebSocketBehavior::closeHandler [uid: ae9c4fd3-5184-4d10-b165-608df8c756c6, session: D902E1F067D0588A16FDDDF98380C6B3, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@6]
+DEBUG 06-09 01:36:26.430 o.a.o.w.a.ClientManager:194 [0.0-5080-exec-3] - Removing online room client: ae9c4fd3-5184-4d10-b165-608df8c756c6, room: null
+DEBUG 06-09 01:36:26.434 o.a.o.w.a.ClientManager:149 [0.0-5080-exec-3] - Removing online client: ae9c4fd3-5184-4d10-b165-608df8c756c6, roomId: null
+DEBUG 06-09 01:36:30.541 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-6] - Sending WebSocket PING
+DEBUG 06-09 01:36:52.114 o.a.o.w.p.MainPage:66 [0.0-5080-exec-1] - MainPage::delayedLoad
+DEBUG 06-09 01:36:52.134 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-1] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:36:52.149 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-1] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:36:52.153 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-1] - Level Admin :: [GRANTED]
+DEBUG 06-09 01:36:54.036 o.a.o.w.a.ClientManager:94 [0.0-5080-exec-3] - Adding online client: 1acbdd7b-0535-4407-acdf-396b3ad9a940, room: null
+DEBUG 06-09 01:36:54.120 o.a.o.w.c.MainPanel:156 [0.0-5080-exec-3] - WebSocketBehavior::onConnect [uid: 1acbdd7b-0535-4407-acdf-396b3ad9a940, session: D902E1F067D0588A16FDDDF98380C6B3, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@7]
+DEBUG 06-09 01:36:54.235 o.a.o.w.p.MainPage:101 [0.0-5080-exec-2] - MainPage::onParameterArrival
+DEBUG 06-09 01:36:54.370 o.a.o.w.c.MainPanel:165 [0.0-5080-exec-6] - WebSocketBehavior:: pingTimer is attached
+DEBUG 06-09 01:36:54.482 o.a.o.w.p.MainPage:52 [0.0-5080-exec-9] - MainPage::areaBehavior
+DEBUG 06-09 01:36:54.497 o.a.o.w.c.MainPanel:418 [0.0-5080-exec-9] - updateContents:: npanels IS null ? false, client IS null ? false
+DEBUG 06-09 01:36:55.101 o.a.o.d.d.r.RoomDao:245 [0.0-5080-exec-9] - getUserRoom : 1 || conference
+DEBUG 06-09 01:36:55.117 o.a.o.d.d.r.RoomDao:245 [0.0-5080-exec-9] - getUserRoom : 1 || presentation
+DEBUG 06-09 01:36:55.121 o.a.o.d.d.r.RoomDao:181 [0.0-5080-exec-9] - getAppointedRoomsByUser : UserID - 1
+DEBUG 06-09 01:36:58.542 o.a.o.w.c.MainPanel:200 [0.0-5080-exec-8] - WebSocketBehavior::closeHandler [uid: 1acbdd7b-0535-4407-acdf-396b3ad9a940, session: D902E1F067D0588A16FDDDF98380C6B3, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@7]
+DEBUG 06-09 01:36:58.552 o.a.o.w.a.ClientManager:194 [0.0-5080-exec-8] - Removing online room client: 1acbdd7b-0535-4407-acdf-396b3ad9a940, room: null
+DEBUG 06-09 01:36:58.553 o.a.o.w.a.ClientManager:149 [0.0-5080-exec-8] - Removing online client: 1acbdd7b-0535-4407-acdf-396b3ad9a940, roomId: null
+DEBUG 06-09 01:37:01.610 o.a.o.w.c.MainPanel:118 [.0-5080-exec-10] - Sending WebSocket PING
+DEBUG 06-09 01:37:03.400 o.a.o.w.p.MainPage:101 [0.0-5080-exec-2] - MainPage::onParameterArrival
+DEBUG 06-09 01:37:04.907 o.a.o.w.a.ClientManager:194 [0.0-5080-exec-1] - Removing online room client: 859c7812-bbc5-43c5-a447-5eb6bddbd56a, room: null
+DEBUG 06-09 01:37:04.908 o.a.o.w.a.ClientManager:149 [0.0-5080-exec-1] - Removing online client: 859c7812-bbc5-43c5-a447-5eb6bddbd56a, roomId: null
+DEBUG 06-09 01:37:04.991 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-6] - getActiveLdapConfigs
+DEBUG 06-09 01:37:05.082 o.a.o.w.c.MainPanel:200 [0.0-5080-exec-7] - WebSocketBehavior::closeHandler [uid: 859c7812-bbc5-43c5-a447-5eb6bddbd56a, session: D902E1F067D0588A16FDDDF98380C6B3, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@5]
+DEBUG 06-09 01:37:07.879 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-9] - getActiveLdapConfigs
+DEBUG 06-09 01:37:27.846 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-6] - getActiveLdapConfigs
+DEBUG 06-09 01:39:25.539 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-1] - Rss disabled by Admin
+DEBUG 06-09 01:49:25.569 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-09 01:59:25.552 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-09 02:09:25.530 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-09 02:19:25.549 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-09 02:29:25.560 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-09 02:32:47.412 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-8] - getActiveLdapConfigs
+DEBUG 06-09 02:39:25.551 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-6] - Rss disabled by Admin
+DEBUG 06-09 02:49:25.578 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-09 02:59:25.688 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-09 03:02:06.775 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-5] - getActiveLdapConfigs
+DEBUG 06-09 03:04:30.195 o.a.o.d.d.u.UserDao:640 [0.0-5080-exec-2] - login:: 1 users were found
+DEBUG 06-09 03:04:31.425 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-2] - Level Login :: [GRANTED]
+DEBUG 06-09 03:04:31.481 o.a.o.d.d.u.UserDao:657 [0.0-5080-exec-2] - loginUser [GroupUser [id=1, moderator=false, group=Group [id=1, name=ims-openmeetings, deleted=false], user=User [id=1, firstname=Wayan, lastname=Megantara, login=iwymega@gmail.com, pictureuri=profile.png, deleted=false, languageId=16, address=Address [id=1, country=US, street=null, town=null, zip=null, deleted=false, email=iwymega@gmail.com, phone=null], externalId=null, externalType=null, type=user]]]
+DEBUG 06-09 03:04:31.537 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-2] - Level Admin :: [GRANTED]
+DEBUG 06-09 03:04:32.225 o.a.o.w.p.MainPage:66 [0.0-5080-exec-7] - MainPage::delayedLoad
+DEBUG 06-09 03:04:32.337 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-7] - Level Admin :: [GRANTED]
+DEBUG 06-09 03:04:32.361 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-7] - Level Admin :: [GRANTED]
+DEBUG 06-09 03:04:32.361 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-7] - Level Admin :: [GRANTED]
+DEBUG 06-09 03:04:36.730 o.a.o.w.a.ClientManager:94 [0.0-5080-exec-1] - Adding online client: 477f936e-0474-4aaa-88cf-f94d785121d7, room: null
+DEBUG 06-09 03:04:36.759 o.a.o.w.c.MainPanel:156 [0.0-5080-exec-1] - WebSocketBehavior::onConnect [uid: 477f936e-0474-4aaa-88cf-f94d785121d7, session: 136DA2C4287167728AA65B787E2856DC, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@3]
+DEBUG 06-09 03:04:36.840 o.a.o.w.p.MainPage:101 [.0-5080-exec-10] - MainPage::onParameterArrival
+DEBUG 06-09 03:04:36.895 o.a.o.w.c.MainPanel:165 [0.0-5080-exec-6] - WebSocketBehavior:: pingTimer is attached
+DEBUG 06-09 03:04:37.042 o.a.o.w.p.MainPage:52 [0.0-5080-exec-8] - MainPage::areaBehavior
+DEBUG 06-09 03:04:37.448 o.a.o.w.c.MainPanel:418 [0.0-5080-exec-8] - updateContents:: npanels IS null ? false, client IS null ? false
+DEBUG 06-09 03:04:37.665 o.a.o.d.d.r.RoomDao:245 [0.0-5080-exec-8] - getUserRoom : 1 || conference
+DEBUG 06-09 03:04:37.753 o.a.o.d.d.r.RoomDao:245 [0.0-5080-exec-8] - getUserRoom : 1 || presentation
+DEBUG 06-09 03:04:37.785 o.a.o.d.d.r.RoomDao:181 [0.0-5080-exec-8] - getAppointedRoomsByUser : UserID - 1
+DEBUG 06-09 03:05:07.090 o.a.o.w.c.MainPanel:118 [.0-5080-exec-10] - Sending WebSocket PING
+DEBUG 06-09 03:05:37.522 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-5] - Sending WebSocket PING
+DEBUG 06-09 03:06:08.525 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-3] - Sending WebSocket PING
+DEBUG 06-09 03:06:38.618 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-2] - Sending WebSocket PING
+DEBUG 06-09 03:07:08.744 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-7] - Sending WebSocket PING
+DEBUG 06-09 03:07:38.801 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-9] - Sending WebSocket PING
+DEBUG 06-09 03:08:09.517 o.a.o.w.c.MainPanel:118 [.0-5080-exec-10] - Sending WebSocket PING
+DEBUG 06-09 03:08:40.517 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-3] - Sending WebSocket PING
+DEBUG 06-09 03:09:11.532 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-2] - Sending WebSocket PING
+DEBUG 06-09 03:09:25.554 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-4] - Rss disabled by Admin
+DEBUG 06-09 03:09:42.515 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-7] - Sending WebSocket PING
+DEBUG 06-09 03:10:13.524 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-1] - Sending WebSocket PING
+DEBUG 06-09 03:10:44.522 o.a.o.w.c.MainPanel:118 [.0-5080-exec-10] - Sending WebSocket PING
+DEBUG 06-09 03:11:15.524 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-3] - Sending WebSocket PING
+DEBUG 06-09 03:11:17.971 o.a.o.w.p.MainPage:101 [0.0-5080-exec-8] - MainPage::onParameterArrival
+DEBUG 06-09 03:11:19.539 o.a.o.w.a.ClientManager:194 [0.0-5080-exec-7] - Removing online room client: 477f936e-0474-4aaa-88cf-f94d785121d7, room: null
+DEBUG 06-09 03:11:19.539 o.a.o.w.a.ClientManager:149 [0.0-5080-exec-7] - Removing online client: 477f936e-0474-4aaa-88cf-f94d785121d7, roomId: null
+DEBUG 06-09 03:11:19.723 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-9] - getActiveLdapConfigs
+DEBUG 06-09 03:11:19.963 o.a.o.w.c.MainPanel:200 [.0-5080-exec-10] - WebSocketBehavior::closeHandler [uid: 477f936e-0474-4aaa-88cf-f94d785121d7, session: 136DA2C4287167728AA65B787E2856DC, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@3]
+DEBUG 06-09 03:14:00.211 o.a.o.d.d.u.UserDao:640 [.0-5080-exec-10] - login:: 0 users were found
+DEBUG 06-09 03:14:00.211 o.a.o.d.d.u.UserDao:643 [.0-5080-exec-10] - No users was found: putu
+DEBUG 06-09 03:19:25.562 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-09 03:29:25.551 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-09 03:39:25.546 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-5] - Rss disabled by Admin
+DEBUG 06-09 03:49:25.544 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-5] - Rss disabled by Admin
+DEBUG 06-09 03:59:25.556 o.a.o.s.q.s.ReminderJob:94 [ean#0_Worker-10] - Rss disabled by Admin
+DEBUG 06-09 04:09:25.530 o.a.o.s.q.s.ReminderJob:94 [ean#0_Worker-10] - Rss disabled by Admin
+DEBUG 06-09 04:19:25.572 o.a.o.s.q.s.ReminderJob:94 [ean#0_Worker-10] - Rss disabled by Admin
+DEBUG 06-09 04:19:55.131 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-8] - getActiveLdapConfigs
+DEBUG 06-09 04:19:55.361 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-2] - getActiveLdapConfigs
+DEBUG 06-09 04:19:59.168 o.a.o.d.d.u.UserDao:640 [0.0-5080-exec-2] - login:: 1 users were found
+DEBUG 06-09 04:20:00.777 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-2] - Level Login :: [GRANTED]
+DEBUG 06-09 04:20:00.843 o.a.o.d.d.u.UserDao:657 [0.0-5080-exec-2] - loginUser [GroupUser [id=1, moderator=false, group=Group [id=1, name=ims-openmeetings, deleted=false], user=User [id=1, firstname=Wayan, lastname=Megantara, login=iwymega@gmail.com, pictureuri=profile.png, deleted=false, languageId=16, address=Address [id=1, country=US, street=null, town=null, zip=null, deleted=false, email=iwymega@gmail.com, phone=null], externalId=null, externalType=null, type=user]]]
+DEBUG 06-09 04:20:00.962 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-2] - Level Admin :: [GRANTED]
+DEBUG 06-09 04:20:01.572 o.a.o.w.p.MainPage:66 [0.0-5080-exec-4] - MainPage::delayedLoad
+DEBUG 06-09 04:20:01.672 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-4] - Level Admin :: [GRANTED]
+DEBUG 06-09 04:20:01.805 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-4] - Level Admin :: [GRANTED]
+DEBUG 06-09 04:20:01.828 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-4] - Level Admin :: [GRANTED]
+DEBUG 06-09 04:20:05.797 o.a.o.w.a.ClientManager:94 [0.0-5080-exec-8] - Adding online client: 3acac1eb-f71c-4635-b238-72953a12f474, room: null
+DEBUG 06-09 04:20:05.812 o.a.o.w.c.MainPanel:156 [0.0-5080-exec-8] - WebSocketBehavior::onConnect [uid: 3acac1eb-f71c-4635-b238-72953a12f474, session: 7BB7E4C0F68E535D2CDDCF577C4F611A, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@2]
+DEBUG 06-09 04:20:05.963 o.a.o.w.p.MainPage:101 [0.0-5080-exec-2] - MainPage::onParameterArrival
+DEBUG 06-09 04:20:06.095 o.a.o.w.c.MainPanel:165 [0.0-5080-exec-4] - WebSocketBehavior:: pingTimer is attached
+DEBUG 06-09 04:20:06.252 o.a.o.w.p.MainPage:52 [.0-5080-exec-10] - MainPage::areaBehavior
+DEBUG 06-09 04:20:06.666 o.a.o.w.c.MainPanel:418 [.0-5080-exec-10] - updateContents:: npanels IS null ? false, client IS null ? false
+DEBUG 06-09 04:20:06.835 o.a.o.d.d.r.RoomDao:245 [.0-5080-exec-10] - getUserRoom : 1 || conference
+DEBUG 06-09 04:20:06.887 o.a.o.d.d.r.RoomDao:245 [.0-5080-exec-10] - getUserRoom : 1 || presentation
+DEBUG 06-09 04:20:06.968 o.a.o.d.d.r.RoomDao:181 [.0-5080-exec-10] - getAppointedRoomsByUser : UserID - 1
+DEBUG 06-09 04:20:36.242 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-5] - Sending WebSocket PING
+DEBUG 06-09 04:21:06.305 o.a.o.w.c.MainPanel:118 [.0-5080-exec-10] - Sending WebSocket PING
+DEBUG 06-09 04:21:36.363 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-3] - Sending WebSocket PING
+DEBUG 06-09 04:22:06.413 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-1] - Sending WebSocket PING
+DEBUG 06-09 04:22:36.473 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-2] - Sending WebSocket PING
+DEBUG 06-09 04:23:06.556 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-4] - Sending WebSocket PING
+DEBUG 06-09 04:23:36.637 o.a.o.w.c.MainPanel:118 [.0-5080-exec-10] - Sending WebSocket PING
+DEBUG 06-09 04:24:07.524 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-6] - Sending WebSocket PING
+DEBUG 06-09 04:24:38.517 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-1] - Sending WebSocket PING
+DEBUG 06-09 04:25:09.517 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-8] - Sending WebSocket PING
+DEBUG 06-09 04:25:39.601 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-4] - Sending WebSocket PING
+DEBUG 06-09 04:25:42.530 o.a.o.w.p.MainPage:101 [0.0-5080-exec-9] - MainPage::onParameterArrival
+DEBUG 06-09 04:25:43.565 o.a.o.w.a.ClientManager:194 [0.0-5080-exec-3] - Removing online room client: 3acac1eb-f71c-4635-b238-72953a12f474, room: null
+DEBUG 06-09 04:25:43.571 o.a.o.w.a.ClientManager:149 [0.0-5080-exec-3] - Removing online client: 3acac1eb-f71c-4635-b238-72953a12f474, roomId: null
+DEBUG 06-09 04:25:43.752 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-7] - getActiveLdapConfigs
+DEBUG 06-09 04:25:44.012 o.a.o.w.c.MainPanel:200 [0.0-5080-exec-2] - WebSocketBehavior::closeHandler [uid: 3acac1eb-f71c-4635-b238-72953a12f474, session: 7BB7E4C0F68E535D2CDDCF577C4F611A, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@2]
+DEBUG 06-09 04:27:31.731 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-5] - getActiveLdapConfigs
+DEBUG 06-09 04:29:25.572 o.a.o.s.q.s.ReminderJob:94 [ean#0_Worker-10] - Rss disabled by Admin
+DEBUG 06-09 04:29:34.614 o.a.o.d.d.u.UserDao:410 [0.0-5080-exec-9] - checkEmail: email = megantarawayan939@gmail.com, id = null
+DEBUG 06-09 04:30:05.607 o.a.o.d.d.u.UserDao:410 [0.0-5080-exec-2] - checkEmail: email = megantarawayan939@gmail.com, id = null
+DEBUG 06-09 04:30:42.483 o.a.o.d.d.u.UserDao:410 [0.0-5080-exec-5] - checkEmail: email = megantarawayan939@gmail.com, id = null
+DEBUG 06-09 04:30:42.539 o.a.o.d.d.u.UserDao:410 [0.0-5080-exec-5] - checkEmail: email = megantarawayan939@gmail.com, id = null
+DEBUG 06-09 04:30:42.550 o.a.o.s.m.EmailManager:66 [0.0-5080-exec-5] - sendMail:: username = megantara939, email = megantarawayan939@gmail.com
+DEBUG 06-09 04:30:43.649 o.a.o.w.a.UserManager:188 [0.0-5080-exec-5] - Added user-Id 5
+DEBUG 06-09 04:30:43.651 o.a.o.w.a.UserManager:138 [0.0-5080-exec-5] - User creation result: User [id=5, firstname=I, lastname=Megantara, login=megantara939, pictureuri=null, deleted=false, languageId=16, address=Address [id=4, country=, street=null, town=null, zip=null, deleted=false, email=megantarawayan939@gmail.com, phone=null], externalId=null, externalType=null, type=user]
+DEBUG 06-09 04:31:15.692 o.a.o.d.d.u.UserDao:640 [.0-5080-exec-10] - login:: 1 users were found
+DEBUG 06-09 04:31:16.659 o.a.o.d.u.AuthLevelUtil:42 [.0-5080-exec-10] - Level Login :: [GRANTED]
+DEBUG 06-09 04:31:16.663 o.a.o.d.d.u.UserDao:657 [.0-5080-exec-10] - loginUser [GroupUser [id=3, moderator=false, group=Group [id=1, name=ims-openmeetings, deleted=false], user=User [id=5, firstname=I, lastname=Megantara, login=megantara939, pictureuri=null, deleted=false, languageId=16, address=Address [id=4, country=, street=null, town=null, zip=null, deleted=false, email=megantarawayan939@gmail.com, phone=null], externalId=null, externalType=null, type=user]]]
+DEBUG 06-09 04:31:16.819 o.a.o.d.u.AuthLevelUtil:42 [.0-5080-exec-10] - Level Admin :: [DENIED]
+DEBUG 06-09 04:31:17.577 o.a.o.w.p.MainPage:66 [0.0-5080-exec-2] - MainPage::delayedLoad
+DEBUG 06-09 04:31:17.635 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-2] - Level Admin :: [DENIED]
+DEBUG 06-09 04:31:17.642 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-2] - Level GroupAdmin :: [DENIED]
+DEBUG 06-09 04:31:17.692 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-2] - Level Admin :: [DENIED]
+DEBUG 06-09 04:31:17.696 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-2] - Level Admin :: [DENIED]
+DEBUG 06-09 04:31:20.831 o.a.o.w.a.ClientManager:94 [0.0-5080-exec-3] - Adding online client: 5f3ff1d4-2b91-403f-a709-ae8d46e50d59, room: null
+DEBUG 06-09 04:31:20.991 o.a.o.w.c.MainPanel:156 [0.0-5080-exec-3] - WebSocketBehavior::onConnect [uid: 5f3ff1d4-2b91-403f-a709-ae8d46e50d59, session: E31F624A6B4B9D3D93EB80D25A174D63, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@3]
+DEBUG 06-09 04:31:21.010 o.a.o.w.p.MainPage:101 [0.0-5080-exec-5] - MainPage::onParameterArrival
+DEBUG 06-09 04:31:21.080 o.a.o.w.c.MainPanel:165 [0.0-5080-exec-1] - WebSocketBehavior:: pingTimer is attached
+DEBUG 06-09 04:31:21.299 o.a.o.w.p.MainPage:52 [.0-5080-exec-10] - MainPage::areaBehavior
+DEBUG 06-09 04:31:21.551 o.a.o.w.c.MainPanel:418 [.0-5080-exec-10] - updateContents:: npanels IS null ? false, client IS null ? false
+DEBUG 06-09 04:31:21.784 o.a.o.d.d.r.RoomDao:245 [.0-5080-exec-10] - getUserRoom : 5 || conference
+DEBUG 06-09 04:31:21.802 o.a.o.d.d.r.RoomDao:253 [.0-5080-exec-10] - Could not find room 5 || conference
+ WARN 06-09 04:31:21.808 o.a.o.d.d.r.SipDao:78 [.0-5080-exec-10] - There is no Asterisk configured
+DEBUG 06-09 04:31:21.958 o.a.o.d.d.r.RoomDao:245 [.0-5080-exec-10] - getUserRoom : 5 || presentation
+DEBUG 06-09 04:31:22.098 o.a.o.d.d.r.RoomDao:253 [.0-5080-exec-10] - Could not find room 5 || presentation
+ WARN 06-09 04:31:22.112 o.a.o.d.d.r.SipDao:78 [.0-5080-exec-10] - There is no Asterisk configured
+DEBUG 06-09 04:31:22.198 o.a.o.d.d.r.RoomDao:181 [.0-5080-exec-10] - getAppointedRoomsByUser : UserID - 5
+DEBUG 06-09 04:31:51.289 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-2] - Sending WebSocket PING
+DEBUG 06-09 04:32:21.339 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-3] - Sending WebSocket PING
+DEBUG 06-09 04:32:51.382 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-8] - Sending WebSocket PING
+DEBUG 06-09 04:33:21.456 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-2] - Sending WebSocket PING
+DEBUG 06-09 04:33:51.504 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-3] - Sending WebSocket PING
+DEBUG 06-09 04:34:21.590 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-1] - Sending WebSocket PING
+DEBUG 06-09 04:34:51.631 o.a.o.w.c.MainPanel:118 [.0-5080-exec-10] - Sending WebSocket PING
+DEBUG 06-09 04:35:21.692 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-6] - Sending WebSocket PING
+DEBUG 06-09 04:35:52.524 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-7] - Sending WebSocket PING
+DEBUG 06-09 04:36:23.581 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-3] - Sending WebSocket PING
+DEBUG 06-09 04:36:54.524 o.a.o.w.c.MainPanel:118 [0.0-5080-exec-1] - Sending WebSocket PING
+DEBUG 06-09 04:37:26.516 o.a.o.w.c.MainPanel:118 [.0-5080-exec-10] - Sending WebSocket PING
+ INFO 06-09 06:36:21.497 ROOT:81 [main] - Starting up context: openmeetings
+DEBUG 06-09 06:36:37.192 o.a.o.c.r.ScopeApplicationAdapter:343 [r:/openmeetings] - start: Scope [name=openmeetings, path=/default, type=APPLICATION, autoStart=true, creationTime=1591655795211, depth=1, enabled=true, running=false]
+DEBUG 06-09 06:36:37.352 o.a.o.c.r.ScopeApplicationAdapter:127 [r:/openmeetings] - webAppPath : E:\red54010\webapps\openmeetings
+DEBUG 06-09 06:36:43.062 o.a.o.u.Version:82 [r:/openmeetings] - 
+	################################################################################
+	#                              Openmeetings is up                              #
+	#                     4.0.10 190d8a1 2019-12-11T14:39:37Z                      #
+	#                               and ready to use                               #
+	################################################################################
+
+DEBUG 06-09 06:36:49.465 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-7] - Rss disabled by Admin
+DEBUG 06-09 06:36:49.469 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-8] - getInstanceOfCrypt:: configKeyCryptClassName: org.apache.openmeetings.util.crypt.SCryptImplementation
+ WARN 06-09 06:37:43.883 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:37:43.897 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:37:43.908 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:37:43.912 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:37:43.920 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:37:43.929 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:37:43.951 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:37:43.957 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:37:43.962 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:38:28.688 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:38:43.717 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:38:43.724 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:38:43.732 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:38:43.736 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:38:43.745 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:38:43.748 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:38:43.750 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:38:43.752 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:38:43.760 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:39:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:39:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:39:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:39:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:39:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:39:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:39:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:39:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:39:43.717 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:40:08.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:40:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:40:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:40:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:40:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:40:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:40:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:40:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:40:43.720 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:40:43.727 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:41:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:41:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:41:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:41:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:41:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:41:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:41:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:41:43.724 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:41:43.727 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:41:48.781 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:42:43.697 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:42:43.699 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:42:43.701 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:42:43.702 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:42:43.704 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:42:43.706 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:42:43.715 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:42:43.717 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:42:43.719 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:43:28.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:43:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:43:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:43:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:43:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:43:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:43:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:43:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:43:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:43:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:44:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:44:43.698 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:44:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:44:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:44:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:44:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:44:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:44:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:44:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:45:08.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:45:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:45:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:45:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:45:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:45:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:45:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:45:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:45:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:45:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:46:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:46:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:46:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:46:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:46:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:46:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:46:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:46:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:46:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:46:48.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:46:48.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: dashboard.show.rssfeed
+DEBUG 06-09 06:46:48.712 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-4] - Rss disabled by Admin
+ WARN 06-09 06:47:43.697 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:47:43.700 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:47:43.702 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:47:43.704 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:47:43.705 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:47:43.707 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:47:43.709 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:47:43.711 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:47:43.713 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:48:28.686 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:48:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:48:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:48:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:48:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:48:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:48:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:48:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:48:43.723 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:48:43.726 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:49:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:49:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:49:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:49:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:49:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:49:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:49:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:49:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:49:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:50:08.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:50:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:50:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:50:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:50:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:50:43.709 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:50:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:50:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:50:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:50:43.717 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:51:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:51:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:51:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:51:43.709 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:51:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:51:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:51:43.717 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:51:43.722 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:51:43.741 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:51:48.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:52:43.697 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:52:43.702 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:52:43.707 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:52:43.709 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:52:43.712 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:52:43.714 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:52:43.716 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:52:43.718 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:52:43.728 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:53:28.687 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:53:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:53:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:53:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:53:43.720 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:53:43.730 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:53:43.737 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:53:43.745 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:53:43.750 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:53:43.757 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:54:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:54:43.698 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:54:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:54:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:54:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:54:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:54:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:54:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:54:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:55:08.685 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:55:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:55:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:55:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:55:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:55:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:55:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:55:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:55:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:55:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:56:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:56:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:56:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:56:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:56:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:56:43.709 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:56:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:56:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:56:43.717 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:56:48.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:56:48.717 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: dashboard.show.rssfeed
+DEBUG 06-09 06:56:48.719 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-2] - Rss disabled by Admin
+ WARN 06-09 06:57:43.696 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:57:43.700 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:57:43.701 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:57:43.703 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:57:43.705 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:57:43.707 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:57:43.711 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:57:43.714 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:57:43.716 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:58:28.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 06:58:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:58:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:58:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:58:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:58:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:58:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:58:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:58:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:58:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 06:59:43.698 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 06:59:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 06:59:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 06:59:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 06:59:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 06:59:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 06:59:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 06:59:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 06:59:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:00:08.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:00:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:00:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:00:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:00:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:00:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:00:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:00:43.709 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:00:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:00:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:01:43.695 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:01:43.695 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:01:43.695 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:01:43.695 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:01:43.695 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:01:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:01:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:01:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:01:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:01:48.685 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:02:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:02:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:02:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:02:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:02:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:02:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:02:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:02:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:02:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:03:28.686 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:03:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:03:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:03:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:03:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:03:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:03:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:03:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:03:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:03:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:04:43.696 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:04:43.698 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:04:43.700 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:04:43.702 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:04:43.704 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:04:43.706 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:04:43.711 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:04:43.713 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:04:43.715 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:05:08.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:05:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:05:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:05:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:05:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:05:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:05:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:05:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:05:43.720 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:05:43.724 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:06:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:06:43.698 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:06:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:06:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:06:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:06:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:06:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:06:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:06:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:06:48.685 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:06:48.693 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: dashboard.show.rssfeed
+DEBUG 06-09 07:06:48.700 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-7] - Rss disabled by Admin
+ WARN 06-09 07:07:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:07:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:07:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:07:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:07:43.718 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:07:43.723 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:07:43.729 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:07:43.734 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:07:43.739 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:08:28.687 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:08:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:08:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:08:43.722 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:08:43.727 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:08:43.733 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:08:43.736 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:08:43.739 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:08:43.741 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:08:43.743 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:09:43.698 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:09:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:09:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:09:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:09:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:09:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:09:43.722 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:09:43.742 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:09:43.751 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:10:08.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:10:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:10:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:10:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:10:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:10:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:10:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:10:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:10:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:10:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:11:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:11:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:11:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:11:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:11:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:11:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:11:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:11:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:11:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:11:48.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:12:43.696 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:12:43.700 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:12:43.702 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:12:43.703 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:12:43.705 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:12:43.707 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:12:43.709 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:12:43.712 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:12:43.716 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:13:28.685 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:13:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:13:43.698 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:13:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:13:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:13:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:13:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:13:43.709 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:13:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:13:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:14:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:14:43.698 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:14:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:14:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:14:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:14:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:14:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:14:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:14:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:15:08.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:15:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:15:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:15:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:15:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:15:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:15:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:15:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:15:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:15:43.718 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:16:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:16:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:16:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:16:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:16:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:16:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:16:43.709 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:16:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:16:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:16:48.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:16:48.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: dashboard.show.rssfeed
+DEBUG 06-09 07:16:48.706 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-2] - Rss disabled by Admin
+ WARN 06-09 07:17:43.697 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:17:43.700 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:17:43.701 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:17:43.703 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:17:43.705 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:17:43.708 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:17:43.709 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:17:43.711 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:17:43.713 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:18:28.685 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:18:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:18:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:18:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:18:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:18:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:18:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:18:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:18:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:18:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:19:43.698 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:19:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:19:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:19:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:19:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:19:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:19:43.717 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:19:43.718 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:19:43.722 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:20:08.688 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:20:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:20:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:20:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:20:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:20:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:20:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:20:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:20:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:20:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:21:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:21:43.723 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:21:43.758 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:21:43.787 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:21:43.804 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:21:43.815 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:21:43.817 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:21:43.821 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:21:43.832 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:21:48.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:22:43.698 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:22:43.700 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:22:43.714 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:22:43.719 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:22:43.725 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:22:43.748 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:22:43.753 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:22:43.757 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:22:43.766 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:23:28.689 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:23:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:23:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:23:43.709 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:23:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:23:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:23:43.719 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:23:43.721 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:23:43.723 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:23:43.725 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:24:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:24:43.724 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:24:43.743 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:24:43.762 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:24:43.764 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:24:43.767 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:24:43.772 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:24:43.778 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:24:43.779 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:25:08.685 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:25:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:25:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:25:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:25:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:25:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:25:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:25:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:25:43.717 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:25:43.719 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:26:43.698 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:26:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:26:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:26:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:26:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:26:43.709 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:26:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:26:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:26:43.717 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:26:48.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:26:48.721 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: dashboard.show.rssfeed
+DEBUG 06-09 07:26:48.722 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-7] - Rss disabled by Admin
+ WARN 06-09 07:27:43.697 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:27:43.701 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:27:43.704 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:27:43.706 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:27:43.710 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:27:43.712 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:27:43.713 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:27:43.715 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:27:43.724 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:28:28.685 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:28:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:28:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:28:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:28:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:28:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:28:43.718 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:28:43.729 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:28:43.731 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:28:43.744 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:29:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:29:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:29:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:29:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:29:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:29:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:29:43.710 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:29:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:29:43.718 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:30:08.685 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:30:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:30:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:30:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:30:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:30:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:30:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:30:43.719 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:30:43.720 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:30:43.723 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:31:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:31:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:31:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:31:43.720 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:31:43.725 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:31:43.728 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:31:43.730 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:31:43.732 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:31:43.734 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:31:48.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:32:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:32:43.703 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:32:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:32:43.709 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:32:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:32:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:32:43.717 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:32:43.719 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:32:43.724 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:33:28.686 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:33:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:33:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:33:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:33:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:33:43.709 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:33:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:33:43.719 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:33:43.721 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:33:43.725 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:34:43.698 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:34:43.712 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:34:43.729 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:34:43.731 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:34:43.742 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:34:43.744 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:34:43.746 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:34:43.747 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:34:43.759 o.a.o.d.d.b.ConfigurationDao:218 [ean#0_Worker-10] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:35:08.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-6] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:35:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:35:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:35:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:35:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:35:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:35:43.706 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:35:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:35:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:35:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-2] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:36:43.696 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:36:43.698 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:36:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:36:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:36:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:36:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:36:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:36:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:36:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:36:49.012 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: dashboard.show.rssfeed
+ WARN 06-09 07:36:49.016 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-8] - Could not find key in configurations: number.minutes.reminder.send
+DEBUG 06-09 07:36:49.087 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-9] - Rss disabled by Admin
+ WARN 06-09 07:37:43.695 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:37:43.698 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:37:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:37:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:37:43.722 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:37:43.726 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:37:43.737 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:37:43.742 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:37:43.754 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-5] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:38:28.692 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:38:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:38:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:38:43.717 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:38:43.723 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:38:43.724 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:38:43.726 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:38:43.728 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:38:43.730 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:38:43.739 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-3] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:39:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:39:43.699 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:39:43.701 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:39:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:39:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:39:43.708 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:39:43.711 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:39:43.712 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:39:43.714 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-4] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:40:08.687 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send
+ WARN 06-09 07:40:43.697 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:40:43.700 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:40:43.702 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:40:43.704 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:40:43.705 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:40:43.707 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:40:43.713 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:40:43.715 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:40:43.716 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-1] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:41:43.727 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.server
+ WARN 06-09 07:41:43.745 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.port
+ WARN 06-09 07:41:43.831 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.system.email
+ WARN 06-09 07:41:43.959 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.user
+ WARN 06-09 07:41:44.001 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.pass
+ WARN 06-09 07:41:44.006 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.starttls.enable
+ WARN 06-09 07:41:44.019 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: inviter.email.as.replyto
+ WARN 06-09 07:41:44.060 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.connection.timeout
+ WARN 06-09 07:41:44.085 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-9] - Could not find key in configurations: mail.smtp.timeout
+ WARN 06-09 07:41:48.684 o.a.o.d.d.b.ConfigurationDao:218 [Bean#0_Worker-7] - Could not find key in configurations: number.minutes.reminder.send

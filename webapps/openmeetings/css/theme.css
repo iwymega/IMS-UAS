@@ -1,0 +1,2686 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License") +  you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+* {
+	box-sizing: content-box; /* IE */
+	box-sizing: initial; /*reset bootstrap box sizing*/
+}
+.signin .oauth-section {
+	border-left: 2px dotted;
+	padding-left: 5px;
+}
+.signin .oauth-section .provider {
+	background-position: 0 0;
+	background-size: 16px;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+#header {
+	font-size: 28px;
+	line-height: 40px;
+	font-weight: bold;
+	background-image: url(images/logo.png);
+	background-repeat: no-repeat;
+	padding-left: 80px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+#topLinks {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#topLinks span {
+	padding-right: 5px;
+	padding-left: 5px;
+	border-right: 1px solid black;
+	white-space: nowrap;
+}
+
+#topLinks span:last-child {
+	border-right: none;
+}
+#busy-indicator {
+	display: none;
+	z-index: 1000;
+	width: 30px;
+	height: 30px;
+	border: 0;
+	position: absolute;
+	right: 0;
+	margin: 2px;
+	background-image: url(../images/ajax-loader.gif);
+	background-repeat: no-repeat;
+	background-size: 28px 28px;
+}
+.clickable {
+	cursor: pointer;
+}
+.dragbox-content .tableWrapper {
+	width: auto;
+	height: 100px;
+}
+.dragbox-content .tableWrapper .adminListTable {
+	max-width: none;
+	min-width: 0;
+}
+.help.support h3 {
+	margin-bottom: 5px;
+}
+.tableWrapper, .tableWrapperSmall {
+	background-color: #FFFFFF;
+	border: solid 1px #aacfe4;
+	width: 536px;
+	height: 100px;
+	overflow-y: scroll;
+}
+.tableWrapper {
+	height: 500px;
+}
+
+.formelementradiobox {
+	margin-left: 100px;
+}
+
+.formelementradiobox input {
+	margin: 0px 0px;
+	border: none;
+	width: 20px;
+}
+
+.formelementradiobox label {
+	width: 260px;
+	margin: 0px
+}
+
+.addLanguagePanel {
+	display: inline-block;
+}
+
+.addLanguagePanel select {
+	padding: 0px 0px;
+	border: solid 1px #aacfe4;
+	width: 140px;
+	font-size: 12px;
+	margin-left: 2px;
+}
+
+.pagedEntityListPanel {
+	margin-left: 2px;
+	display: inline-block;
+}
+
+.searchForm {
+	display: inline-block;
+	vertical-align: top;
+}
+.searchForm input[type="button"] {
+	padding: .2em .5em;
+	font-size: smaller;
+}
+.pagedEntityListPanel select, .adminForm .pagedEntityListPanel select {
+	padding: 0px 0px;
+	border: solid 1px #aacfe4;
+	width: 60px;
+	font-size: 12px;
+	display: inline;
+	float: none;
+}
+.searchForm input[type="text"], .adminForm .searchForm input[type="text"] {
+	width: 140px;
+	float: none;
+	display: inline-block;
+}
+.searchForm input[type="submit"], .adminForm .searchForm input[type="submit"] {
+	width: auto;
+	float: none;
+	display: inline-block;
+	border: 2px outset buttonface;
+	padding: 1px 6px;
+	font-size: 12px;
+}
+.pagedEntityListPanel input, .adminForm .pagedEntityListPanel input {
+	font-size: 14px;
+	padding: 0px 0px;
+	border: solid 1px #aacfe4;
+	width: 100px;
+	height: 20px;
+	margin: 2px 2px;
+	display: inline;
+	float: none;
+}
+
+.goto, .goto :link, .goto :hover {
+	font-size: 14px;
+	line-height: 14px;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	min-width: 16px;
+}
+
+.goto.icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	zoom: 1.2;
+}
+
+.ui-dialog {
+	-moz-box-shadow: 3px 3px 4px #000;
+	-webkit-box-shadow: 3px 3px 4px #000;
+	/* For IE 8 */
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+	/* For IE 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135,
+		Color='#000000' );
+	box-shadow: 3px 3px 4px #000;
+}
+.sort-icon, .sort-icon a {
+	display: inline-block !important;
+	text-indent: 0px !important;
+}
+.sort-icon a {
+	width: inherit;
+	height: inherit;
+}
+.start_step1, .start_step2, .start_step3, .start_step4 {
+	padding-left: 30px;
+	background-position: left top;
+	margin: 5px 0px 5px 0px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.start_step1 {
+	background-image: url(images/wizzard_button_1.png);
+}
+.start_step2 {
+	background-image: url(images/wizzard_button_2.png);
+	margin-left: 20px;
+}
+.start_step3 {
+	background-image: url(images/wizzard_button_3.png);
+	margin-left: 40px;
+}
+.start_step4 {
+	background-image: url(images/wizzard_button_4.png);
+	margin-left: 60px;
+}
+.widget {
+	width: 100%;
+}
+.widget td {
+	min-width: 150px;
+}
+#contents {
+}
+#contents .dragbox-content {
+}
+#feedcontainer {
+	overflow: auto;
+}
+#feeds.ui-accordion .ui-accordion-header {
+	margin-bottom: 2px;
+}
+#feeds.ui-accordion .ui-accordion-content {
+	white-space: pre;
+}
+.align-left {
+	float: left;
+}
+.align-right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.om-icon {
+	background-repeat: no-repeat !important;
+	background-position: 0 0 !important;
+	background-size: 16px;
+	width: 18px;
+	height: 18px;
+	border: none;
+	margin-left: 2px;
+	margin-top: 2px;
+	display: inline-block !important;
+}
+.om-icon.big {
+	background-size: 32px;
+	background-position: 1px 1px !important;
+	width: 34px;
+	height: 34px;
+}
+.cross.om-icon {
+	background-image: url(images/cross.png);
+}
+.tick.om-icon {
+	background-image: url(images/tick.png);
+}
+.add.om-icon {
+	background-image: url(images/add.png);
+}
+.new-email.om-icon {
+	background-image: url(images/email_add.png);
+}
+.user.om-icon {
+	background-image: url(images/user.png);
+}
+.invite.om-icon {
+	background-image: url(images/connect.png);
+}
+.online.om-icon {
+	background-image: url(images/bullet_green.png);
+}
+.offline.om-icon {
+	background-image: url(images/bullet_red.png);
+}
+.error .k-notification-wrap {
+	white-space: normal;
+}
+.error {
+	color: red;
+}
+.message {
+	margin: 50px;
+	border: 1px solid black;
+	padding: 15px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+.private.message.body {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.private.message.body .quote {
+	border-left: 1px solid #cccccc;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+.ui-progressbar div {
+	text-align: center;
+	padding-top: 7px;
+	font-weight: bold;
+}
+table.messages {
+	width: 100%;
+	min-height: 500px;
+}
+table.messages td.side, table.messages td.main {
+	vertical-align: top;
+}
+table.messages td.side.left {
+	min-width: 150px;
+	overflow-x: hidden;
+}
+table.messages td.side.right {
+	min-width: 200px;
+	overflow-x: hidden;
+}
+table.messages td.main {
+	width: 100%;
+}
+.email {
+	padding-left: 25px;
+	background-repeat: no-repeat !important;
+	background-position: 5px 3px !important;
+	background-size: 16px 16px !important;
+	padding-top: 2px;
+	display: block;
+	text-align:left;
+}
+.email.new {
+	background-image: url(images/email_add.png);
+	font-weight: normal;
+}
+.email.new .ui-button-text, .email.newdir .ui-button-text {
+	padding: 0;
+}
+.email.inbox {
+	background-image: url(images/basket_put.png);
+}
+.email.sent {
+	background-image: url(images/email_go.png);
+}
+.email.trash {
+	background-image: url(images/email_delete.png);
+}
+.email.newdir {
+	background-image: url(images/folder_add.png);
+	font-weight: normal;
+}
+.email.folder {
+	background-image: url(images/folder.png);
+	font-weight: normal;
+	position: relative;
+}
+.email.folder .delete {
+	position:absolute;
+	right: 2px;
+	top: 2px;
+	background-image: url(images/cross.png);
+	font-weight: normal;
+	padding: 0;
+	display: inline-block;
+	background-position: 0;
+	width: 18px;
+	height: 18px;
+}
+.messages.column.label {
+	width: 20px;
+	min-height: inherit;
+}
+input[type="text"].messages.text {
+	width: 100%;
+}
+textarea.messages.body {
+	width: 100%;
+	height: 300px;
+}
+select.messages.selector {
+	width: 220px;
+}
+.info-text {
+	background-image: url(images/information.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	cursor: default;
+	border: none;
+	padding-left: 20px;
+	font-style: italic;
+	white-space: normal;
+}
+.info-title {
+	background-image: url(images/information.png);
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-left: 10px;
+}
+.invisible-form-component {
+	position: absolute;
+	top: -9999px;
+	width: 1px;
+	height: 1px;
+}
+#messagesTable tr.selected {
+	background-color: #d7ebf9;
+}
+#messagesTable tr.unread {
+	font-weight: bold;
+}
+.fht-tbody {
+	background-color: white;
+}
+#searchUsersTable th, .fht-table th {
+	font-weight: bold !important;
+	text-align: left;
+}
+#ui-datepicker-div {
+	z-index: 100 !important;
+}
+.room-list {
+	border-collapse: collapse;
+	min-width: 400px;
+}
+.room-list .room-row {
+	background-color: rgb(248, 248, 248);
+	border-bottom: 5px solid white;
+	padding: 5px;
+	position: relative;
+}
+.room-list .room-row .container {
+	margin-right: 120px;
+}
+.room-list .room-row button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.select2-results .user.external, .select2-selection .user.external
+, .select2-results .user.internal, .select2-selection .user.internal {
+	padding-left: 18px;
+	background-repeat: no-repeat;
+	background-position: 0px 2px;
+}
+.select2-results .user.external, .select2-selection .user.external {
+	background-image: url(images/user_go.png);
+}
+.select2-results .user.internal, .select2-selection .user.internal {
+	background-image: url(images/user.png);
+}
+.om-select2 .select2.select2-container {
+	max-height: 80px;
+	overflow-y: auto;
+}
+.om-select2.full-width .select2.select2-container {
+	width: 100% !important;
+}
+.recording .video {
+	width: 100%;
+	display: inline-block;
+	box-shadow: 0 0 10px 1px rgba(74, 137, 151, 0.5);
+}
+.recording .video video {
+	width: 100%;
+}
+.page.recording {
+	padding-top: 40px;
+}
+.page.recording .video, .page.recording .info {
+	display: inline-block;
+	float: left;
+	padding-left: 20px;
+}
+.page.recording .video {
+	min-width: 400px;
+}
+.rooms.title {
+	font-weight: bold;
+	padding: 10px;
+	padding-bottom: 0;
+}
+.rooms.desc {
+	margin: 10px;
+	max-width: 900px;
+}
+.user.info.panel legend {
+	font-style: italic;
+	text-align: right;
+}
+.user.info.panel fieldset table, .user.info.panel fieldset table textarea {
+	width: 100%;
+}
+#topControls #wicketDebugBar {
+	right: auto; /* IE */
+	top: auto; /* IE */
+	right: initial;
+	top: initial;
+	z-index: 2;
+	bottom: 0;
+	position: fixed;
+}
+form .input {
+	display: block;
+	float: left;
+	font-size: 14px;
+	padding: 0px 0px;
+	width: 280px;
+	margin: 2px 2px;
+}
+.profile {
+	position: relative;
+}
+.profile img {
+	width: 125px;
+}
+.date.time.picker {
+	font-size: 12px;
+	white-space: nowrap;
+}
+.profile .ui-button-text-only .ui-button-text {
+	font-size: 12px;
+	padding-right: 0.2em;
+	padding-left: 0.2em;
+}
+.profile .ui-button-icon.ui-icon.ui-icon-closethick.remove {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	border: 1px solid #cccc;
+}
+#contents .btn-file>input {
+	transform: translate(-30px, 0) scale(1);
+}
+.room.list.container {
+	height: 150px;
+	max-height: 150px;
+	overflow-y: auto;
+	border: 1px solid #cccccc;
+}
+.no-close .ui-dialog-titlebar-close {
+	display: none;
+}
+.table, .msg-row {
+	position: relative;
+}
+.table .column {
+	display: inline-block;
+	margin-bottom: 5px;
+	min-height: auto; /* IE */
+	min-height: initial;
+	float: none;
+	margin-right: 0;
+}
+.table .column.label {
+	width: 20%;
+}
+.table .column.data {
+	width: 75%;
+	vertical-align: middle;
+}
+ /**** TODO need to be unified with other icons used ****/
+div.formSaveBar {
+	height: 35px;
+}
+.hash-panel-main {
+	width: 100%;
+	height: 100%;
+}
+.om-tbl {
+	display: table;
+	width: 100%;
+}
+.om-tbl .om-tbl-row {
+	display: table-row;
+}
+.om-tbl .om-tbl-row .om-tbl-cell {
+	display: table-cell;
+}
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License") +  you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+#activities {
+	height: 20px;
+	overflow: hidden;
+}
+#activities .ui-resizable-handle {
+	width: 100%;
+}
+#activities .ui-widget-header {
+	white-space: nowrap;
+}
+#activities .control.block .ui-icon {
+	text-align: center;
+}
+#activities .control.block .label {
+	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#activities .ctrl {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#activities .area {
+	height: 319px;
+	overflow-y: auto;
+}
+.activity.item {
+	position: relative;
+	padding: 5px;
+	margin-bottom: 3px
+}
+.activity.item .ui-icon {
+	border-width: 1px;
+	border-style: solid;
+	margin-left: 2px;
+}
+.ui-icon.crosshair {
+	background-image: url(images/crosshair.png);
+}
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License") +  you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+.adminPanel {
+	min-width: 1070px;
+}
+/*
+################################
+ Column layout admin section
+################################
+ */
+.adminPanelColumnTable {
+	display: inline-block;
+	vertical-align: top;
+}
+.adminListTable {
+	max-width: 518px;
+	min-width: 518px;
+}
+.adminListTable tr:nth-child(odd), .adminListTableSmall tr:nth-child(odd), .striped-table .striped-row:nth-child(odd) {
+	opacity: .8;
+}
+.adminListTable tr.deleted {
+	background-image: repeating-linear-gradient(-45deg, transparent, transparent 5px, /* gap */ #cccccc 6px, /* overall width incluing gap */ #cccccc 6px);
+}
+.adminListTable tr:hover, .adminListTableSmall tr:hover, .room-row:hover {
+	/*SHOULD BE MANUALLY IN SYNC WITH THEME .ui-state-hover */
+	border: 1px solid #74b2e2;
+	background-color: #e4f1fb;
+	font-weight: normal;
+	color: #0070a3;
+}
+.adminListTable th.two_column_layout_column1 {
+	width: 136px;
+}
+.adminListTable th.two_column_layout_column2 {
+	width: 354px;
+}
+.adminListTable td.two_column_layout_column1 {
+	width: 136px;
+}
+.adminListTable td.two_column_layout_column2 {
+	width: 354px;
+}
+.adminListTable td div.two_column_layout_divcolumn1 {
+	word-wrap: break-word;
+	width: 136px;
+}
+.adminListTable td div.two_column_layout_divcolumn2 {
+	word-wrap: break-word;
+	width: 354px;
+}
+.adminListTable th.three_column_layout_column1 {
+	width: 96px;
+}
+.adminListTable th.three_column_layout_column2 {
+	width: 150px;
+}
+.adminListTable th.three_column_layout_column3 {
+	width: 244px;
+}
+.rooms .adminListTable th.three_column_layout_column1 {
+	width: 46px;
+}
+.rooms .adminListTable th.three_column_layout_column2 {
+	width: 370px;
+}
+.rooms .adminListTable th.three_column_layout_column3 {
+	width: 74px;
+}
+.adminListTableSmall th.three_column_layout_column1 {
+	width: 50px;
+}
+.adminListTableSmall th.three_column_layout_column2 {
+	width: 50px;
+}
+.adminListTableSmall th.three_column_layout_column3 {
+	width: 218px;
+}
+.adminListTableSmall th.three_column_layout_column4 {
+	width: 150px;
+}
+.adminListTableSmall th.three_column_layout_column5 {
+	width: 50px;
+}
+.adminListTable td.three_column_layout_column1 {
+	width: 96px;
+}
+.adminListTable td.three_column_layout_column2 {
+	width: 150px;
+}
+.adminListTable td.three_column_layout_column3 {
+	width: 244px;
+}
+.adminListTableSmall td.three_column_layout_column1 {
+	width: 50px;
+}
+.adminListTableSmall td.three_column_layout_column2 {
+	width: 50px;
+}
+.adminListTableSmall td.three_column_layout_column3 {
+	width: 218px;
+}
+.adminListTableSmall td.three_column_layout_column4 {
+	width: 150px;
+}
+.adminListTableSmall td.three_column_layout_column5 {
+	width: 50px;
+}
+.adminListTable td div.three_column_layout_divcolumn1 {
+	word-wrap: break-word;
+	width: 96px;
+}
+.adminListTable td div.three_column_layout_divcolumn2 {
+	word-wrap: break-word;
+	width: 150px;
+}
+.adminListTable td div.three_column_layout_divcolumn3 {
+	word-wrap: break-word;
+	width: 244px;
+}
+.rooms .adminListTable td div.three_column_layout_divcolumn1 {
+	word-wrap: break-word;
+	width: 44px;
+}
+.rooms .adminListTable td div.three_column_layout_divcolumn2 {
+	word-wrap: break-word;
+	width: 382px;
+}
+.rooms .adminListTable td div.three_column_layout_divcolumn3 {
+	word-wrap: break-word;
+	width: 74px;
+}
+table.adminListTableSmall td div.three_column_layout_divcolumn1 {
+	width: 50px;
+}
+table.adminListTableSmall td div.three_column_layout_divcolumn2 {
+	width: 50px;
+}
+table.adminListTableSmall td div.three_column_layout_divcolumn3 {
+	width: 218px;
+}
+table.adminListTableSmall td div.three_column_layout_divcolumn4 {
+	width: 150px;
+}
+table.adminListTableSmall td div.three_column_layout_divcolumn5 {
+	width: 50px;
+}
+
+table.adminListTable th.four_column_layout_column1 {
+	width: 96px;
+}
+
+table.adminListTable th.four_column_layout_column2 {
+	width: 130px;
+}
+
+table.adminListTable th.four_column_layout_column3 {
+	width: 132px;
+}
+
+table.adminListTable th.four_column_layout_column4 {
+	width: 132px;
+}
+
+table.adminListTable td.four_column_layout_column1 {
+	width: 96px;
+}
+
+table.adminListTable td.four_column_layout_column2 {
+	width: 130px;
+}
+
+table.adminListTable td.four_column_layout_column3 {
+	width: 132px;
+}
+
+table.adminListTable td.four_column_layout_column4 {
+	width: 132px;
+}
+
+table.adminListTable td div.four_column_layout_divcolumn1 {
+	word-wrap: break-word;
+	width: 96px;
+}
+
+table.adminListTable td div.four_column_layout_divcolumn2 {
+	word-wrap: break-word;
+	width: 130px;
+}
+
+table.adminListTable td div.four_column_layout_divcolumn3 {
+	word-wrap: break-word;
+	width: 132px;
+}
+
+table.adminListTable td div.four_column_layout_divcolumn4 {
+	word-wrap: break-word;
+	width: 132px;
+}
+table.adminListTable .one_sixth {
+	width: 16.67%;
+}
+.adminPanelColumnForm {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2px;
+}
+
+.adminPanelColumnForm div.scrollcontent {
+	vertical-align: top;
+	height: 500px;
+	overflow-y: scroll;
+}
+
+.adminForm {
+}
+.adminForm .btn {
+	width: 280px;
+}
+.adminForm .input, .adminForm input, .adminForm input.formcheckbox
+,.adminForm textarea, .adminForm select, .adminForm label
+ {
+	display: block;
+	float: left;
+	font-size: 14px;
+	padding: 0px 0px;
+	margin: 2px 2px;
+}
+.adminForm .input {
+	border: solid 1px #aacfe4;
+	width: 280px;
+	min-height: 20px;
+	white-space: normal; /* IE */
+	white-space: initial;
+}
+.adminForm input {
+	border: solid 1px #aacfe4;
+	width: 280px;
+	height: 20px;
+}
+.adminForm input[type=checkbox], .adminForm input[type=radio] {
+	width: auto;
+}
+.adminForm input.formcheckbox {
+	border: none;
+	width: 20px;
+	height: 20px;
+}
+
+.adminForm fieldset {
+	margin-top: 4px;
+	padding: 4px;
+}
+
+.adminForm legend {
+	padding: 0.2em 0.5em;
+	margin: 0px 10px;
+	font-style: italic;
+	text-align: right;
+}
+
+.adminForm textarea {
+	border: solid 1px #aacfe4;
+	width: 280px;
+	height: 60px;
+}
+
+.adminForm div.formelement {
+	display: block;
+	clear: both;
+	max-width: 540px;
+	white-space: nowrap;
+}
+
+.adminForm select {
+	height: 20px;
+	border: solid 1px #aacfe4;
+	width: 282px;
+}
+
+.adminForm label {
+	font-weight: bold;
+	text-align: right;
+	width: 180px;
+	white-space: normal;
+}
+.adminForm .group.logo .profile img {
+	height: 16px;
+	width: auto;
+}
+.adminBackupForm div.formelement {
+	display: block;
+	clear: both;
+	max-width: 1240px;
+}
+.adminFormsFeedbackPanel {
+	position: fixed;
+	left:550px;
+	width: 480px;
+	bottom: 16px;
+	z-index:999;
+}
+.adminForm .newItem {
+	padding-left: 25px;
+	background-image: url(images/new.png);
+	background-repeat: no-repeat;
+	background-position: 5px;
+}
+/* generated using https://proto.io/freebies/onoff/ */
+.onoffswitch {
+	position: relative;
+	width: 50px;
+	display: inline-block;
+	margin-left:  2px;
+}
+.onoffswitch-checkbox {
+	display: none !important;
+	float: none !important;
+	margin: 0 !important;
+}
+.onoffswitch-label {
+	display: block !important;
+	float: none !important;
+	margin: 0 !important;
+	overflow: hidden;
+	cursor: pointer;
+	border: 2px solid #999999;
+	border-radius: 0px;
+	width: auto !important;
+}
+.onoffswitch-inner {
+	display: block;
+	width: 200%;
+	margin-left: -100%;
+	transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner .before, .onoffswitch-inner .after {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 20px;
+	padding: 0;
+	line-height: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+.onoffswitch-inner .before {
+	content: " ";
+	padding-left: 5px;
+	background-color: #14da33;
+}
+.onoffswitch-inner .after {
+	content: " ";
+	padding-right: 5px;
+	background-color: #ef0808;
+	text-align: right;
+}
+.onoffswitch-switch {
+	display: block;
+	width: 19px;
+	margin: 0.5px;
+	background: #A1A1A1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 26px;
+	border: 2px solid #999999;
+	border-radius: 0px;
+	transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+	margin-left: 0;
+}
+.onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+	right: 0px;
+	background-color: #A1A1A1;
+}
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License") +  you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+.appointmentPopUp td {
+	vertical-align: top;
+}
+
+.appointmentPopUp input[type="text"], .appointmentPopUp input[type="url"] {
+	width: 420px;
+}
+
+.appointmentPopUp input[type="password"] {
+	width: 420px;
+}
+
+.appointmentPopUp textarea {
+	width: 424px;
+	height: 80px;
+}
+
+.appointmentPopUp select {
+	width: 426px;
+}
+.appointmentPopUp td {
+	vertical-align: middle;
+}
+.appointmentPopUp .attendeeContainer {
+	background-color: #FFFFFF;
+	border: solid 1px #aacfe4;
+	width: 424px;
+	height: 100px;
+	overflow-x: scroll;
+	float: left;
+}
+
+.appointment.ui-dialog .ui-dialog-content {
+	padding: 0;
+}
+
+.cell input{
+	width: 47.5%;
+}
+
+.calendarlist li {
+	list-style-type: none;
+	margin: 0.3em;
+}
+
+.calendarlist li input {
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.calendarlist {
+	padding: 0;
+}
+
+#calendarlistcontainer {
+	width: 20%;
+	float: left;
+	display: inline-block;
+	overflow-y: auto;
+}
+
+#wrapper-panel-frame {
+	display: inline-block;
+	width: 80%;
+	height: 100%;
+}
+/*
+ * jQuery CSSEmoticons plugin 0.2.9
+ *
+ * Copyright (c) 2010 Steve Schwartz (JangoSteve)
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ *
+ * Date: Sun Oct 22 1:00:00 2010 -0500
+ */
+ 
+ /* Basic styles for emoticons */
+span.css-emoticon {
+  font-family: "Trebuchet MS"; /* seems to give the best and most consistent emoticon appearance */
+  font-size: 0.65em;
+  font-weight: bold;
+  color: #000000;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  transform: rotate(90deg);
+  width: 1.54em; /* note that this is a multiple of this span's font-size, not containing text font-size */
+  height: 1.54em; /* so, relative to containing text, width and height are 0.9 x 1.6 = 1.44em */
+  text-align: center;
+  padding: 0;
+  line-height: 1.34em;
+  border-radius: 1.54em;
+  box-shadow: 1px -1px 2px rgba(0,0,0,0.5);
+  border: 1px solid rgba(0,0,0,0.25);
+  background-color: #ffcc00;
+  background-image: linear-gradient(to right, #fff4c8, #fc0);
+  -webkit-transition-property:color, background, transform;  
+  -webkit-transition-duration: 1s, 1s;  
+  -webkit-transition-timing-function: linear, ease-in;
+}
+
+/* Styles for two-character emoticons that need more letter-spacing for proportionality */
+span.css-emoticon.spaced-emoticon {
+  padding-left: 0.2em;
+  width: 1.34em;
+  letter-spacing: 0.2em;
+}
+
+/* This is a dirty dirty hack, because webkit doesn't properly do the padding+width=total-width as it should
+   I think the width of the border may be throwing things off, because it's more noticable for small icons */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  span.css-emoticon.spaced-emoticon {
+    width: 1.4em;
+  }
+}
+
+/* Styles for emoticons that need to have smaller characters to fit inside the circle */
+span.css-emoticon.small-emoticon {
+  font-size: 0.55em;
+  width: 1.82em;
+  height: 1.82em;
+  line-height: 1.72em;
+  border-radius: 1.82em;
+}
+
+span.css-emoticon.small-emoticon.spaced-emoticon {
+  padding-left: 0;
+  width: 1.82em;
+  letter-spacing: 0.1em;
+}
+
+/* Styles for additional colors */
+span.css-emoticon.red-emoticon {
+  background-color: #eb0542;
+  background-image: linear-gradient(to right, #fa376e, #eb0542);
+}
+
+span.css-emoticon.pink-emoticon {
+  background-color: #ff8fd4;
+  background-image: linear-gradient(to right, #ffade1, #ff8fd4);
+}
+
+/* styles for emoticons that need no rotation, like O_o */
+span.css-emoticon.no-rotate { 
+  transform: rotate(0deg);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  font-size: 0.45em;
+  width: 2.2em;
+  height: 2.2em;
+  line-height: 1.9em;
+  border-radius: 2.2em;
+  background-image: linear-gradient(#fff4c8, #fc0);
+}
+
+span.css-emoticon.no-rotate.red-emoticon {
+  background-image: linear-gradient(#fa376e, #eb0542);
+}
+
+span.css-emoticon.no-rotate.pink-emoticon {
+  background-image: linear-gradient(#ffade1, #ff8fd4);
+}
+
+/* Styles for emoticons that need to be rotated counter-clockwise, like <3 */
+span.css-emoticon.counter-rotated { 
+  transform: rotate(-90deg);
+  box-shadow: -1px 1px 2px rgba(0,0,0,0.5);
+  background-image: linear-gradient(to left, #fff4c8, #fc0);
+}
+
+span.css-emoticon.counter-rotated.red-emoticon {
+  background-image: linear-gradient(to left, #fa376e, #eb0542);
+}
+
+span.css-emoticon.counter-rotated.pink-emoticon {
+  background-image: linear-gradient(to left, #ffade1, #ff8fd4);
+}
+
+/* Styles for animated states */
+span.css-emoticon.un-transformed-emoticon, span.css-emoticon.animated-emoticon:hover {
+    letter-spacing: inherit;
+    color: inherit;
+    overflow: visible;
+    transform: rotate(0deg);
+    background: none;
+    background-image: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+span.css-emoticon.nintendo-controller {
+  font-size: .8em;
+  height: 1.2em;
+  line-height: 1em;
+  width: 2.7em;
+  vertical-align: bottom;
+  border-radius: 0;
+  background: linear-gradient(to right, #a5aabd, #74798c);
+}
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License") +  you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+#chatPanel {
+	position: fixed;
+	z-index: 2000;
+	bottom: 0px;
+	right: 10px;
+	height: 20px;
+}
+#chatPanel #chatPopup {
+	height: 20px;
+}
+#chat .btn-toolbar {
+	margin-top: 2px;
+	margin-bottom: 0;
+	margin-left: 5px;
+}
+#chat #chatTabs.ui-tabs {
+	padding: 0;
+}
+#chat #chatTabs.ui-tabs .ui-tabs-nav {
+	padding: 0;
+}
+#chat #chatTabs.ui-tabs .ui-tabs-nav li {
+	margin: 0;
+}
+#chat #chatTabs.ui-tabs .ui-tabs-nav li .ui-icon.ui-icon-close {
+	float: left;
+}
+#chat #chatTabs.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	padding: 2px .5em;
+	float: left;
+}
+#chatPopup .control.block .ui-icon {
+	text-align: center;
+}
+#chatPopup .control.block .label {
+	display: inline-block;
+	width: 70px;
+	padding-left: 5px;
+}
+#chat .messageArea .time {
+	margin-right: 5px;
+	font-style: italic;
+	font-size: smaller;
+}
+#chat .messageArea .user-row {
+	background-size: 38px, 38px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	min-height: 40px;
+}
+#chat .messageArea .user-row .icons {
+	display: none;
+}
+#chat .messageArea .user-row:hover .icons {
+	display: block;
+}
+#chat .messageArea .from {
+	margin-left: 5px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+#chat .messageArea .date-row {
+	text-align: center;
+	font-style: italic;
+	padding: 5px 0;
+}
+.ui-tabs .ui-tabs-panel.messageArea {
+	height: 165px;
+	overflow-y: auto;
+	padding: 0 5px;
+}
+#chatMessage {
+	margin-right: 22px;
+}
+#chatMessage .wysiwyg-editor {
+	min-height: 70px;
+	max-height: 70px;
+}
+.chat-tool-icon {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 16px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+.list.chat-tool-icon {
+	background-image: url(images/list.png);
+}
+.sound.chat-tool-icon {
+	background-image: url(images/sound.png);
+}
+.sound-mute.chat-tool-icon {
+	background-image: url(images/sound_mute.png);
+}
+.save.chat-tool-icon {
+	background-image: url(images/file_save_as.png);
+}
+#chat #hyperlink {
+	background-image: url(images/link.png);
+}
+#chat #fontStyle span {
+	background-image: url(images/settings.png);
+}
+.send-ctrl.chat-tool-icon {
+	background-image: url(images/key_ctrl.png);
+	background-position: 0px 0px;
+	background-size: 25px;
+}
+#chat .chat-btn {
+	display: inline-block;
+	float: right;
+}
+#chat .chat-btn:first-of-type {
+	margin-right: 10px;
+}
+#chat .send {
+	width: 16px;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 60px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+/* room mode */
+#chatPanel.room {
+	width: 20px;
+	right: 0px;
+	top: 34px;
+}
+#chatPanel.room #chat form {
+	position: absolute;
+	bottom: 0;
+}
+#chatPanel.room.closed #chatPopup .control.block .label {
+	transform: rotate(90deg);
+	transform-origin: -15% 68% 0;
+}
+#chatPanel.room.closed #chatPopup #chat {
+	display: none;
+}
+ul.dropdown-menu.btns-only, ul.dropdown-menu.btns-only li {
+	max-width: 62px;
+	min-width: 62px;
+}
+ul.dropdown-menu.btns-only li .chat-btn {
+	float: none !important;
+}
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License") +  you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+#menu .ui-menu:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+#menu .ui-menu .ui-menu-item {
+	display: inline-block;
+	margin: 0;
+	line-height: 1.2em !important;
+	padding: .2em 2.1em .2em 1em;
+	font-weight: normal;
+}
+#menu .ui-menu .ui-menu-item, #menu .ui-menu .ui-menu-item .ui-state-active {
+	font-weight: bold;
+}
+#menu .ui-menu .ui-menu-item.sub {
+	width: 280px;
+	display: block;
+}
+#menu .ui-menu .ui-menu-item.top {
+	border: 0 !important;
+}
+#menu .ui-menu.ui-widget.ui-widget-content.ui-menu-icons {
+	border: 0;
+}
+#menu .ui-menu {
+	z-index: 10000000; /*need to be in sync with .room.menu.right*/
+}
+.recording .ui-menu .ui-menu-item {
+	display: block;
+}
+.room.menu .ui-menu .ui-menu-item {
+	padding-left: 5px;
+	padding-right: 0;
+}
+.room.menu .top.room.menu.exit {
+	padding-left: 0;
+}
+.room.menu.right {
+	position: absolute;
+	top: 0;
+	margin-right: 5px;
+	right: 0;
+	display: inline-block;
+	z-index: 10000001;
+}
+.room.menu.right .room {
+	float: right;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+.room.menu.right .room.name {
+	font-weight: bold;
+}
+.room.menu.right .room.name.screen {
+	color: red;
+}
+.room.menu.right .room.demo {
+}
+.room.menu.right .icon {
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	background-size: 22px;
+	float: right;
+	padding: 0;
+}
+.room.menu.right .icon.share {
+	background-image: url(images/monitor_go.png);
+}
+.room.menu.right .icon.shared {
+	background-image: url(images/shared.png);
+}
+.room.menu.right .icon .profile {
+	margin-top: 3px;
+}
+.room.menu.right .icon .profile img {
+	width: 28px;
+}
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License") +  you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+.room.sidebar #busy-indicator {
+	margin: 8px;
+}
+.room.holder {
+	width: 100%;
+}
+.room.box {
+	height: 100%;
+}
+.ui-icon.room.menu.exit {
+	background-image: url(images/exit_button.png);
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	margin-left: 5px;
+}
+.ui-icon.status-user {
+	background-image: url(images/status-user.png);
+}
+.ui-icon.status-wb {
+	background-image: url(images/status-wb.png);
+}
+.ui-icon.status-mod {
+	background-image: url(images/status-mod.png);
+}
+.room.sidebar {
+	min-width: 155px;
+	width: 315px;
+	position: absolute;
+}
+.room.sidebar .ui-resizable-handle, #chatPanel.room .ui-resizable-handle {
+	width: 4px;
+	background-color: #f3f3f4;
+	border: 1px solid #dedee0;
+}
+.room.sidebar .ui-resizable-handle:hover, #chatPanel.room .ui-resizable-handle:hover {
+	background-color: #b6bdca;
+	border-color: #bebec3;
+}
+.room.sidebar .ui-tabs .ui-tabs-panel {
+	padding: 0;
+}
+.room.sidebar .user.header {
+	padding-left: 5px;
+}
+.room.sidebar .user.header .ui-icon {
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 32px;
+	height: 32px;
+}
+.room.sidebar .user.list {
+	overflow-y: auto;
+}
+.room.sidebar .user.list .user {
+	min-height: 40px;
+	padding-left: 5px;
+	padding-top: 5px;
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+	position: relative;
+}
+.room.sidebar .user.list .user:hover {
+	background-size: 80px 80px;
+	min-height: 80px;
+}
+.room.sidebar .user.list .user:hover .user.name {
+	padding: 0px;
+	margin-top: 84px;
+	min-height: 18px;
+}
+.room.sidebar .user.list .user .user.actions {
+	display: none;
+}
+.room.holder.small .room.sidebar .user.list .user:hover .user.actions {
+	margin-top: 84px;
+}
+.room.holder .room.sidebar .user.list .user:hover .user.actions {
+	display: block;
+	min-height: 18px;
+	padding: 0;
+	margin-right: 35px;
+}
+.room.sidebar .user.list .user.name {
+	line-height: 18px;
+	height: 18px;
+	padding: 0;
+	padding-left: 44px;
+	margin-right: 20px;
+	overflow: hidden;
+}
+.room.holder.small .room.sidebar .user.list .user.name {
+	display: none;
+}
+.room.sidebar .user.list .user .user.actions .ui-icon {
+	margin-right: 2px;
+	margin-top: 0;
+}
+.room.sidebar .user.list .user .ui-icon {
+	background-size: 16px;
+}
+.room.sidebar .user.list .user .ui-icon.audio-activity {
+	position: absolute;
+	bottom: 0px;
+	right: 3px;
+}
+.room.sidebar .user.list .user .ui-icon.big {
+	background-size: 32px;
+}
+.room.sidebar .icon-undock, .room.sidebar .icon-dock {
+	width: 16px;
+	height: 16px;
+}
+.room.sidebar .icon-undock {
+	background-image: url(images/double-arrow-left.png);
+}
+.room.sidebar .icon-dock {
+	background-image: url(images/double-arrow-right.png);
+}
+.room.sidebar.closed #room-sidebar-tab-users, .room.sidebar.closed #room-sidebar-tab-files {
+	display: none;
+}
+.audio-activity.ui-icon {
+	opacity: 0.2;
+	background-image: url(images/speaking.png);
+}
+.typing-activity.ui-icon {
+	display: none;
+	width: 30px;
+	background-image: url(images/typing.gif);
+}
+.typing-activity.ui-icon.typing {
+	display: inline-block;
+}
+.private-chat.ui-icon {
+	background-image: url(images/page_edit.png);
+}
+.audio-activity.ui-icon.speaking, .ui-icon.granted {
+	opacity: 1;
+}
+.right.moderator.ui-icon {
+	background-image: url(images/user_add.png);
+}
+.room.menu.right .icon.ask {
+	background-image: url(images/hand.png);
+}
+.right.moderator.ui-icon.granted {
+	background-image: url(images/user_delete.png);
+}
+.right.presenter.ui-icon {
+	background-image: url(images/wand_add.png);
+}
+.right.presenter.ui-icon.granted {
+	background-image: url(images/wand_delete.png);
+}
+.right.wb.ui-icon {
+	background-image: url(images/pencil_add.png);
+}
+.right.wb.ui-icon.granted {
+	background-image: url(images/pencil_delete.png);
+}
+.right.screen-share.ui-icon {
+	background-image: url(images/monitor_add.png);
+}
+.right.screen-share.ui-icon.granted {
+	background-image: url(images/monitor_delete.png);
+}
+.right.remote-control.ui-icon {
+	background-image: url(images/mouse_add.png);
+}
+.right.remote-control.ui-icon.granted {
+	background-image: url(images/mouse_delete.png);
+}
+.right.audio.ui-icon {
+	background-image: url(images/microphone_add.png);
+}
+.right.audio.ui-icon.granted {
+	background-image: url(images/microphone_delete.png);
+}
+.right.camera.ui-icon {
+	background-image: url(images/webcam_add.png);
+}
+.room.sidebar .user.list .user .kick.ui-icon {
+	background-size: auto; /* IE */
+	background-size: initial;
+}
+.right.camera.ui-icon.granted {
+	background-image: url(images/webcam_delete.png);
+}
+.mute-others.ui-icon {
+	background-image: url(images/microphone_muteothers.png);
+}
+.restart.ui-icon {
+	background-size: auto !important; /* IE */
+	background-size: initial !important;
+}
+.settings.ui-icon, .settings.om-icon {
+	background-image: url(images/settings.png);
+}
+.activity.cam.ui-icon {
+	background-image: url(images/webcam_enable.png);
+}
+.activity.cam.enabled.ui-icon {
+	background-image: url(images/webcam_disable.png);
+}
+.activity.mic.ui-icon {
+	background-image: url(images/microphone_enable.png);
+}
+.ui-icon.disabled, .om-icon.disabled { /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+	pointer-events: none;
+}
+.activity.mic.enabled.ui-icon {
+	background-image: url(images/microphone_disable.png);
+}
+.room.sidebar .user.list .user .user.actions .ui-icon.bumper
+	, .room.sidebar .user.header .ui-icon.bumper {
+	padding-right: 5px;
+}
+.room.sidebar .user.list .user.current {
+	font-weight: bold;
+	background-color: #00FF00;
+}
+.ui-dialog.video, .ui-dialog.video .ui-dialog-titlebar, .ui-dialog.video .ui-dialog-content {
+	padding: 0;
+}
+.ui-dialog.video .ui-dialog-content {
+	overflow: hidden;
+}
+.ui-dialog.video .ui-dialog-titlebar {
+	padding-left: 10px
+}
+.ui-dialog.video.user-video.user-speaks{
+	box-shadow: 3px 3px 4px green;
+}
+.dropdown-menu.video.volume, .dropdown-menu.video.volume li {
+	width: 20px;
+	min-width: 20px;
+	border-radius: 0;
+	border: 0;
+	box-shadow: initial;
+	left: 70px;
+	top: -50px;
+	background-color: transparent;
+}
+#video-settings {
+	padding: 5px 10px;
+}
+ul.settings-menu {
+	max-height: 130px;
+}
+.ui-dialog.video .title {
+	font-weight: bold;
+}
+.ui-dialog.video .opt-block {
+	width: 300px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.ui-dialog.video .vid-block {
+	min-width: 300px;
+	padding-left: 305px;
+}
+.ui-dialog.video .level-meter {
+	height: 16px;
+}
+.ui-dialog.video .warn {
+	float: right;
+	margin-right: .3em;
+}
+.ui-dialog.video .level-meter .ui-progressbar-value {
+	background: greenyellow;
+}
+.ui-dialog.video .sett-container {
+	position: relative;
+	min-height: 200px;
+}
+.ui-dialog.video .sett-row {
+	padding-top: 10px;
+}
+.ui-dialog.video .sett-row.right {
+	text-align: right;
+}
+.ui-dialog.video .vid-block .video-conainer {
+	overflow: auto;
+	max-height: 300px;
+}
+.ui-dialog.video .sett-row select, .ui-dialog.video .level-meter {
+	width: 250px;
+}
+.ui-dialog.video .ui-dialog-titlebar-collapse span
+, .ui-dialog.video .ui-dialog-titlebar-volume span
+, .ui-dialog.video .ui-dialog-titlebar-refresh span
+{
+	display: block;
+	margin: 1px;
+}
+.ui-dialog.video .footer {
+	display: none;
+}
+.ui-dialog.video.mic-status .footer {
+	display: block;
+}
+.input .select2-container {
+	max-height: 100px;
+	overflow-y: auto;
+}
+.sip .button-row {
+	text-align: center;
+	margin: 5px;
+}
+.sip .button-row input.sip-number {
+	width: 130px;
+}
+.sip .button-row #sip-dialer-btn-erase {
+	margin-left: 5px;
+}
+.sip .button-row #sip-dialer-btn-erase .ui-button-text {
+	padding: .1em .7em;
+	font-weight: bolder;
+}
+.room.sidebar .tab.om-icon.big {
+	padding: 0em 1em 0 2.5em;
+	line-height: 30px;
+	width: auto;
+	max-width: 80px;
+}
+.room.sidebar .tab.om-icon.big .label {
+	max-width: 50px;
+	display: inline-block;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.room.holder.small .room.sidebar .tab.user.om-icon.big {
+	max-width: 20px;
+}
+.room.holder.small .room.sidebar .tab.om-icon.big {
+	max-width: 0px;
+	padding-right: 0;
+}
+.room.holder.small .room.sidebar .tab.om-icon.big .label {
+	display: none;
+}
+.room.holder.small .room.sidebar .tab.om-icon.big .badge {
+	margin-left: -20px;
+	margin-top: 15px;
+}
+.room.holder.small .room.sidebar .file.tree .file.item .name
+	, .room.holder.small .room.sidebar .file.tree .file.item .name span
+{
+	width: 40px;
+}
+.room.sidebar .tab.om-icon.big.user {
+	background-image: url(images/group.png);
+}
+.room.sidebar .tab.om-icon.big.file {
+	background-image: url(images/folder_explore.png);
+}
+.ui-state-active .badge {
+	color: #337ab7;
+	background-color: #fff;
+}
+
+.badge {
+	display: inline-block;
+	min-width: 10px;
+	padding: 3px 7px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	background-color: #777;
+	border-radius: 10px;
+}
+/************ VIDEO **************/
+.room.box .user-video {
+	display: inline-block !important;
+}
+.room.box .user-video .header {
+	height: 20px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.room.box .user-video .header .ui-dialog-title {
+	padding-left: 5px;
+}
+.room.box .user-video .video {
+	min-width: 40px;
+	min-height: 30px;
+	overflow: hidden;
+}
+.pod-area {
+	display: -ms-inline-grid;
+	display: inline-grid;
+}
+.pod-area.max2, .pod-area.max3 {
+	-ms-grid-columns: (1fr)[3];
+	grid-template-columns: repeat(3, 1fr);
+	-ms-grid-rows: (1fr)[2];
+	grid-template-rows: repeat(2, 1fr);
+}
+.pod-area.max2 {
+	grid-template-areas:
+		"e a a"
+		"b a a";
+}
+.pod-area.max3 {
+	grid-template-areas:
+		"b1 a a"
+		"b2 a a";
+}
+.pod-area.max5, .pod-area.max9, .pod-area.max13 {
+	-ms-grid-columns: (1fr)[4];
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas:
+		"b1 a a b2"
+		"b3 a a b4";
+}
+.pod-area.max5 {
+	-ms-grid-rows: (1fr)[2];
+	grid-template-rows: repeat(2, 1fr);
+}
+.pod-area.max9 {
+	-ms-grid-rows: (1fr)[3];
+	grid-template-rows: repeat(3, 1fr);
+}
+.pod-area.max13 {
+	-ms-grid-rows: (1fr)[4];
+	grid-template-rows: repeat(4, 1fr);
+}
+.pod-area.max17, .pod-area.max25, .pod-area.max33 {
+	-ms-grid-columns: (1fr)[8];
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-areas: 
+		"b01 b02 a a a a b03 b04"
+		"b05 b06 a a a a b07 b08"
+		"b09 b10 a a a a b11 b12"
+		"b13 b14 a a a a b15 b16";
+}
+.pod-area.max17 {
+	-ms-grid-rows: (1fr)[4];
+	grid-template-rows: repeat(4, 1fr);
+}
+.pod-area.max25 {
+	-ms-grid-rows: (1fr)[5];
+	grid-template-rows: repeat(5, 1fr);
+}
+.pod-area.max33 {
+	-ms-grid-rows: (1fr)[6];
+	grid-template-rows: repeat(6, 1fr);
+}
+.pod-area .pod-big, .pod-area .pod {
+	position: relative;
+	padding: 2px;
+	margin: 2px;
+}
+.pod-area .empty {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+	grid-area: e;
+}
+.pod-area.max2 .pod-big
+ , .pod-area.max3 .pod-big
+ , .pod-area.max5 .pod-big
+ , .pod-area.max9 .pod-big
+ , .pod-area.max13 .pod-big {
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 2;
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 2;
+}
+.pod-area.max17 .pod-big, .pod-area.max25 .pod-big, .pod-area.max33 .pod-big {
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 4;
+	-ms-grid-column: 3;
+	-ms-grid-column-span: 4;
+}
+.pod-area .pod-big {
+	grid-area: a;
+	border: 1px solid #cccccc;
+	border-radius: 8px;
+	background-image: url(images/drop.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 64px;
+}
+.pod-area .pod {
+}
+.pod-area .pod.ui-sortable-placeholder {
+	background-color: whitesmoke;
+	visibility: visible !important;
+}
+.pod-area .pod-big.ui-hightlight {
+	box-shadow: 3px 3px 4px blue;
+}
+.pod-area .pod.secure, .pod-area .pod.secure .ui-dialog.video.user-video.secure {
+	min-width: 300px;
+	min-height: 200px;
+}
+.width250 {
+	min-width: 250px;
+	max-width: 250px;
+}
+.room.box.interview .room.wb.area .wb-area .rec-btn {
+	z-index: 100;
+	border-radius: 30px;
+	position: absolute;
+	right: 200px;
+	bottom: 0px;
+	width: 40px;
+	height: 40px;
+}
+.room.box.interview .room.wb.area .wb-area .rec-btn .ui-button-icon.ui-icon.stop
+, .room.box.interview .room.wb.area .wb-area .rec-btn .ui-button-icon.ui-icon.record
+{
+	background-image: none;
+	background-color: red;
+}
+.room.box.interview .room.wb.area .wb-area .rec-btn .ui-button-icon.ui-icon.record {
+	border-radius: 15px;
+}
+#quick-vote {
+	position: absolute;
+	right: 40px;
+	bottom: 40px;
+	padding: 5px;
+	background-color: aquamarine;
+}
+#quick-vote .control {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: 35px;
+	position: relative;
+}
+#quick-vote .control.pro {
+	background-image: url(images/add.png);
+}
+#quick-vote .control.con {
+	background-image: url(images/cancel.png);
+}
+#quick-vote .control .badge {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.room.box.interview #quick-vote {
+	z-index: 100;
+	right: 10px;
+	bottom: 2px;
+	padding: 0px 5px 0px 5px;
+	height: 40px;
+}
+.room.box.interview #quick-vote .close {
+	display: inline-block;
+	float: right;
+}
+@media screen and (max-width: 1280px) {
+	.room.sidebar {
+		width: 155px;
+	}
+	.room.holder .room.sidebar .tab.om-icon.big {
+		max-width: 0px;
+		padding-right: 0;
+	}
+	.room.holder.big .room.sidebar .tab.om-icon.big {
+		max-width: 80px;
+		padding: 0em 1em 0 2.5em;
+	}
+	.room.holder .room.sidebar .user.list .user.name {
+		display: none;
+	}
+	.room.holder.big .room.sidebar .user.list .user.name {
+		display: block;
+	}
+	.room.holder .room.sidebar .file.tree .file.item .name
+		, .room.holder .room.sidebar .file.tree .file.item .name span
+	{
+		width: 40px;
+	}
+	.room.holder.big .room.sidebar .file.tree .file.item .name
+		, .room.holder.big .room.sidebar .file.tree .file.item .name span
+	{
+		width: 255px;
+	}
+	.room.sidebar .file.tree .file.item .name span {
+		padding: 0;
+	}
+	.room.holder .room.sidebar .file.tree .file.item {
+		width: 80px;
+	}
+	.room.holder.big .room.sidebar .file.tree .file.item {
+		width: auto;
+	}
+}
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License") +  you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+.file.tree.container {
+	border: 1px solid #ccc;
+	max-width: 350px;
+}
+.file.tree {
+	width: 100%;
+	display: inline-block;
+}
+.file.tree .trees {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.trash-toolbar {
+	font-weight: bold;
+	line-height: 20px;
+	color: transparent;
+}
+.trash-toolbar .om-icon.fileitem, .trash-toolbar .om-icon.recorditem {
+	display: none !important;
+}
+.trash-toolbar-hover {
+	color: inherit;
+}
+.file.tree .files .sizes table, .file.tree .files .info table {
+	width: 100%;
+}
+.file.tree .files .info input {
+	width: 100%;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.trees .om-icon {
+	width: auto;
+	margin-top: 0;
+}
+.trees .om-icon span {
+	white-space: nowrap;
+	padding-right: 20px;
+	vertical-align: top;
+}
+.trees .tree-node {
+	white-space: nowrap;
+}
+.refresh.om-icon {
+	background-image: url(images/refresh.png);
+}
+.trash.om-icon {
+	background-image: url(images/bin_closed.png);
+}
+.ui-state-hover.trash-toolbar-hover .trash.om-icon {
+	background-image: url(images/bin_empty.png);
+}
+.folder-create.om-icon {
+	background-image: url(images/folder_add.png);
+}
+.recording.om-icon {
+	background-image: url(images/film.png);
+}
+.broken.recording.om-icon {
+	background-image: url(images/film_error.png);
+}
+.processing.recording.om-icon {
+	background-image: url(images/film_processing.png);
+}
+.file.om-icon, .recording.om-icon {
+	padding-left: 34px;
+}
+.my.file.om-icon {
+	background-image: url(images/house_link.png);
+}
+.public.file.om-icon {
+	background-image: url(images/world_link.png);
+}
+.image.file.om-icon {
+	background-image: url(images/picture.png);
+}
+.broken.image.file.om-icon {
+	background-image: url(images/picture_error.png);
+}
+.chart.file.om-icon {
+	background-image: url(images/chart_pie.png);
+}
+.broken.chart.file.om-icon {
+	background-image: url(images/chart_pie_error.png);
+}
+.wml.file.om-icon {
+	background-image: url(images/layout.png);
+}
+.broken.wml.file.om-icon {
+	background-image: url(images/layout_error.png);
+}
+.doc.file.om-icon {
+	background-image: url(images/page.png);
+}
+.broken.doc.file.om-icon {
+	background-image: url(images/page_error.png);
+}
+.folder.file.om-icon {
+	background-image: url(images/folder.png);
+}
+.folder-open.file.om-icon {
+	background-image: url(images/folder_open.png);
+}
+.chart.file.om-icon {
+	background-image: url(images/chart_pie.png);
+}
+.drag-container .om-icon {
+	display: block !important;
+}
+.selected .file.item {
+	background-color: #0099FF;
+}
+.tree-theme-windows span.tree-content {
+	display: flex !important;
+}
+.file.item {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+.file.item .name, .file.item .name span {
+	color: black;
+	display: block;
+	width: 230px;
+	max-width: 230px;
+	/* Required for text-overflow to do anything */
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.file.item .name {
+	padding-top: 10px;
+}
+.file.item .errors {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-image: url(images/script_error.png);
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+}
+.dialog.errors {
+	width: 600px;
+	height: 500px;
+	font-size: small;
+}
+.dialog.errors .alert {
+	color: red;
+}
+.dialog.errors .warn {
+	color: #afaf09;
+}
+.dialog.errors .message {
+	display: block;
+	unicode-bidi: embed;
+	font-family: monospace;
+	white-space: pre;
+	margin: 0;
+}
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License") +  you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+.room.wb.area {
+	position: absolute;
+}
+.room.wb.area.ui-state-hover {
+	border: 0;
+}
+.room.wb.area.ui-state-hover .wb-area {
+	visibility: hidden;
+	height: 1px !important;
+}
+.room.wb.area .wb-drop-area {
+	display: none;
+}
+.room.wb.area.ui-state-hover .wb-drop-area {
+	background-image: url(images/drop.png);
+	display: block;
+	background-repeat: no-repeat;
+	height: inherit;
+	background-position: center;
+}
+.room.wb.area .tabs.ui-tabs, .room.wb.area .ui-tabs-panel {
+	padding: 0;
+	background-color:transparent;
+}
+.room.wb.area .ui-tabs-panel {
+	position: relative;
+}
+.room.wb.area .tools {
+	position: relative;
+	display: inline-block;
+	border: 0;
+}
+.room.wb.area .tools .bumper {
+	float: left;
+	display: inline-block;
+	background: repeating-linear-gradient(-45deg, transparent, transparent 3px, gray 3px, gray 5px);
+}
+.room.wb.area .tools.vertical .bumper {
+	width: 35px;
+	height: 9px;
+}
+.room.wb.area .tools.horisontal .bumper {
+	width: 9px;
+	height: 35px;
+}
+.room.wb.area .tools.vertical {
+	width: 35px;
+	height: 394px;
+}
+.room.wb.area .tools.readonly.vertical {
+	width: 35px;
+	height: 43px;
+}
+.room.wb.area .tools.horisontal {
+	width: 394px;
+	height: 35px;
+}
+.room.wb.area .tools.readonly.horisontal {
+	width: 44px;
+	height: 35px;
+}
+.room.wb.area .tools .om-icon.big {
+	float: left;
+	vertical-align: top;
+	width: 35px;
+	height: 35px;
+	background-size: 27px;
+	margin: 0;
+	background-position: 4px !important;
+}
+.room.wb.area .tools .om-icon.big.settings {
+	border: 0 !important;
+}
+.room.wb.area .tools .dropdown-menu .om-icon.big {
+	float: none;
+}
+.room.wb.area .tools .om-icon.big.active {
+	background-color: whitesmoke;
+}
+.room.wb.area .tools .dropdown-menu .om-icon.big.active {
+	border: 1px solid #6b6565;
+}
+.room.wb.area .tools .om-icon.big.paint {
+	background-image: url(images/paintbrush.png);
+}
+.room.wb.area .tools .om-icon.big.pointer {
+	background-image: url(images/pointer.png);
+}
+.room.wb.area .tools .om-icon.big.apointer {
+	background-image: url(images/wbpointer.png);
+}
+.room.wb.area .tools .om-icon.big.line {
+	background-image: url(images/line.png);
+}
+.room.wb.area .tools .om-icon.big.uline {
+	background-image: url(images/uline.png);
+}
+.room.wb.area .tools .om-icon.big.rect {
+	background-image: url(images/rectangle.png);
+}
+.room.wb.area .tools .om-icon.big.ellipse {
+	background-image: url(images/ellipse.png);
+}
+.room.wb.area .tools .om-icon.big.text {
+	background-image: url(images/font.png);
+}
+.room.wb.area .tools .om-icon.big.arrow {
+	background-image: url(images/arrow.png);
+}
+.room.wb.area .tools .om-icon.big.eraser {
+	background-image: url(images/clear-icon.png);
+}
+.room.wb.area .tools .om-icon.big.clear-all {
+	background-image: url(images/cancel.png);
+}
+.room.wb.area .tools .om-icon.big.clear-slide {
+	background-image: url(images/page_delete.png);
+}
+.room.wb.area .tools .om-icon.big.save {
+	background-image: url(images/file_save_as.png);
+}
+.room.wb.area .tools .om-icon.big.undo {
+	background-image: url(images/arrow_undo.png);
+}
+.room.wb.area .tools .om-icon.big.math {
+	background-image: url(images/math.png);
+}
+.room.wb.area .tools .om-icon.big.textbox {
+	background-image: url(images/textbox.png);
+}
+.room.wb.area .om-icon.big.next {
+	background-image: url(images/next.png);
+}
+.room.wb.area .om-icon.big.prev {
+	background-image: url(images/prev.png);
+}
+.wb-tool-settings, .wb-formula {
+	position: absolute;
+	z-index: 95;
+}
+.wb-formula .latex-guide {
+	padding: 0 10px;
+}
+.room.wb.area .tools.vertical .dropdown-toggle {
+	width: 35px;
+	height: 28px;
+}
+.room.wb.area .tools.horisontal .dropdown-toggle {
+	width: 35px;
+	height: 23px;
+}
+.room.wb.area .tools .dropdown-toggle {
+	position: relative;
+	display: inline-block;
+}
+.room.wb.area .tools.horisontal .dropdown-toggle .caret {
+	left: -1px;
+	bottom: -12px;
+}
+.room.wb.area .tools.vertical .dropdown-toggle .caret {
+	left: -1px;
+	bottom: -7px;
+}
+.room.wb.area .tools .dropdown-toggle .caret {
+	position: absolute;
+	border-top: 8px solid transparent;
+	border-left: 8px solid blue;
+	border-right: 8px solid transparent;
+}
+.wb-tool-settings, .wb-tool-settings .tab.props, .wb-formula {
+	display: inline-block;
+	width: 310px;
+}
+.wb-tool-settings .ui-dialog-titlebar-close, .wb-formula .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 5px;
+	width: 20px;
+	padding: 1px;
+	height: 20px;
+}
+.wb-tool-settings .header, .wb-formula .header {
+	padding: 5px;
+}
+.wb-tool-settings .header .ui-dialog-title, .wb-formula .header .ui-dialog-title {
+	padding-left: 10px;
+}
+.wb-tool-settings .tab.props {
+	padding: 5px 10px;
+}
+.wb-tool-settings .tab.props .prop-row {
+	padding-top: 5px;
+	margin: 0;
+	font-size: small;
+}
+.wb-tool-settings .tab.props .block {
+	display: inline;
+	padding-left: 5px;
+}
+.wb-tool-settings .tab.props .block.lbl {
+	width: 1em;
+}
+.wb-tool-settings .tab.props .block.but {
+	width: 2.5em;
+}
+.wb-tool-settings .tab.props .block.input {
+	width: 40px;
+}
+.wb-tool-settings .tab.props .block.input input {
+	width: 30px;
+}
+.wb-tool-settings .tab.props .block.input input[type=number] {
+	width: 40px;
+}
+.wb-tool-settings .tab.props .block.input input[type=color] {
+	padding: 0;
+}
+.wb-tool-settings .tab.props .block.input input[type=color]:disabled {
+	opacity:.3;
+}
+.wb-tool-settings .tab.props .block.but button {
+	width: 2.5em;
+}
+.wb-tool-settings .tab.props  .wb-prop-i.selected {
+	font-style: italic;
+}
+.wb-tool-settings .tab.props .wb-prop-b.selected {
+	font-weight: bold;
+}
+.wb-tool-settings .tab.props .block.but .wb-prop-i
+	, .wb-tool-settings .tab.props .block.but .wb-prop-b
+{
+	width: 5px;
+}
+.wb-formula .text-container {
+	margin: 0 5px 5px 0;
+	padding: 5px;
+}
+.wb-formula .status {
+	min-height: 16px;
+}
+.wb-formula textarea {
+	width: 100%;
+	height: 100%;
+	resize: none;
+}
+.dropdown-menu.om-left {
+	right: 0;
+	left: auto !important;
+}
+.wb-tabbar {
+	padding-left: 70px !important;
+	padding-right: 35px !important;
+	min-height: 40px;
+}
+.wb-tabbar .scroll-container {
+	overflow: hidden;
+}
+.wb-tabbar .scroll-container .scrollable, .wb-tabbar .scroll-container .scrollable li {
+	display: flex;
+}
+.wb-tabbar .add.disabled, .wb-tabbar .prev.disabled, .wb-tabbar .next.disabled {
+	opacity: .3;
+}
+.wb-tabbar .add, .wb-tabbar .prev, .wb-tabbar .next {
+	position: absolute;
+	top: 3px;
+}
+.wb-tabbar .add {
+	left: 2px;
+}
+.wb-tabbar .prev {
+	left: 35px;
+}
+.wb-tabbar .next {
+	right: 2px;
+}
+.wb-tabbar li button {
+	width: 20px;
+	height: 20px;
+	padding: 0;
+}
+.wb-area .ui-tabs-panel .scroll-container {
+	overflow: auto;
+}
+.wb-area .ui-tabs-panel .scroll-container .canvas-container {
+	margin-top: 5px;
+	margin-left: 5px;
+	border: 1px solid #888888;
+	box-shadow: 5px 5px 5px #888888;
+}
+.wb-area .wb-zoom {
+	display: inline-block;
+	padding: 1px 10px;
+	border-radius: 2px;
+	position: absolute;
+	cursor: default;
+}
+.wb-area .wb-zoom, .wb-area .wb-zoom .btn-group button {
+	background-color: grey;
+	line-height: 12px;
+	font-size: 12px;
+}
+.wb-area .wb-zoom .block {
+	display: inline-block;
+}
+.wb-area .wb-zoom button {
+	width: 28px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: 5px 0px;
+}
+.wb-area .wb-zoom input {
+	width: 50px
+}
+.wb-area .wb-zoom button.down {
+	background-image: url(images/page_down.png);
+}
+.wb-area .wb-zoom button.up {
+	background-image: url(images/page_up.png);
+}

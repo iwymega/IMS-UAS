@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:panel>
+	<div id="busy-indicator"></div>
+	<div class="tabs" id="room-sidebar-tabs">
+		<ul>
+			<li>
+				<a href="#room-sidebar-tab-users" class="om-icon big tab user" wicket:message="title:398">
+					<span class="label"><wicket:message key="398"/>&nbsp;</span><span wicket:id="user-count" class="badge">42</span>
+				</a>
+			</li>
+			<li wicket:enclosure="file-tab">
+				<a href="#room-sidebar-tab-files" class="om-icon big tab file" wicket:message="title:245" wicket:id="file-tab">
+					<span class="label"><wicket:message key="245"/></span>
+				</a>
+			</li>
+			<div class="btn-dock" wicket:message="data-ttl-dock:label.dock.panel,data-ttl-undock:label.undock.panel"></div>
+		</ul>
+		<div id="room-sidebar-tab-users">
+			<div wicket:id="icons" class="user header"></div>
+			<div class="user list clear">
+				<div wicket:id="user-list">
+					<div wicket:id="user" class="user entry ui-corner-all ui-widget-content">
+						<div wicket:id="user"></div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">Room.setSize();</script>
+		</div>
+		<div id="room-sidebar-tab-files" wicket:enclosure="tree">
+			<div class="file list">
+				<div wicket:id="tree"></div>
+			</div>
+		</div>
+	</div>
+	<div wicket:id="activities"></div>
+	<div wicket:id="addFolder"></div>
+	<form wicket:id="form"><div wicket:id="confirm-trash"></div></form>
+	<div wicket:id="upload"></div>
+	<div wicket:id="confirm-kick" />
+	<div wicket:id="settings" />
+</wicket:panel>
+</html>

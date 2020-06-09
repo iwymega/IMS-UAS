@@ -1,0 +1,56 @@
+ INFO 06-06 21:25:53.932 ROOT:81 [main] - Starting up context: openmeetings
+DEBUG 06-06 21:26:44.095 o.a.o.c.r.ScopeApplicationAdapter:343 [r:/openmeetings] - start: Scope [name=openmeetings, path=/default, type=APPLICATION, autoStart=true, creationTime=1591449998600, depth=1, enabled=true, running=false]
+DEBUG 06-06 21:26:44.305 o.a.o.c.r.ScopeApplicationAdapter:127 [r:/openmeetings] - webAppPath : E:\red54010\webapps\openmeetings
+DEBUG 06-06 21:26:59.213 o.a.o.u.Version:82 [r:/openmeetings] - 
+	################################################################################
+	#                              Openmeetings is up                              #
+	#                     4.0.10 190d8a1 2019-12-11T14:39:37Z                      #
+	#                               and ready to use                               #
+	################################################################################
+
+DEBUG 06-06 21:27:06.604 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-7] - Rss disabled by Admin
+DEBUG 06-06 21:27:06.700 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-8] - getInstanceOfCrypt:: configKeyCryptClassName: org.apache.openmeetings.util.crypt.SCryptImplementation
+DEBUG 06-06 21:37:06.211 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-5] - Rss disabled by Admin
+DEBUG 06-06 21:47:06.202 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-4] - Rss disabled by Admin
+DEBUG 06-06 21:57:06.193 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-06 22:07:06.249 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-4] - Rss disabled by Admin
+DEBUG 06-06 22:17:06.268 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-06 22:27:06.197 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-2] - Rss disabled by Admin
+DEBUG 06-06 22:37:06.283 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-9] - Rss disabled by Admin
+DEBUG 06-06 22:47:06.213 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-06 22:57:06.198 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-5] - Rss disabled by Admin
+DEBUG 06-06 23:07:06.213 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+DEBUG 06-06 23:17:06.265 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-5] - Rss disabled by Admin
+DEBUG 06-06 23:26:04.403 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-9] - getActiveLdapConfigs
+DEBUG 06-06 23:26:06.794 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-4] - getActiveLdapConfigs
+DEBUG 06-06 23:26:16.440 o.a.o.d.d.s.LdapConfigDao:70 [.0-5080-exec-10] - getActiveLdapConfigs
+DEBUG 06-06 23:26:41.852 o.a.o.d.d.u.UserDao:640 [0.0-5080-exec-5] - login:: 0 users were found
+DEBUG 06-06 23:26:41.853 o.a.o.d.d.u.UserDao:643 [0.0-5080-exec-5] - No users was found: yankek
+DEBUG 06-06 23:27:01.360 o.a.o.d.d.u.UserDao:640 [.0-5080-exec-10] - login:: 0 users were found
+DEBUG 06-06 23:27:01.367 o.a.o.d.d.u.UserDao:643 [.0-5080-exec-10] - No users was found: yankek
+DEBUG 06-06 23:27:06.281 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-6] - Rss disabled by Admin
+DEBUG 06-06 23:27:41.860 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-8] - getActiveLdapConfigs
+DEBUG 06-06 23:27:51.390 o.a.o.d.d.u.UserDao:640 [0.0-5080-exec-3] - login:: 1 users were found
+DEBUG 06-06 23:27:52.972 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-3] - Level Login :: [GRANTED]
+DEBUG 06-06 23:27:53.058 o.a.o.d.d.u.UserDao:657 [0.0-5080-exec-3] - loginUser [GroupUser [id=1, moderator=false, group=Group [id=1, name=ims-openmeetings, deleted=false], user=User [id=1, firstname=I Wayan, lastname=Megantara, login=megantara, pictureuri=profile.png, deleted=false, languageId=1, address=Address [id=1, country=US, street=null, town=null, zip=null, deleted=false, email=iwymega@gmail.com, phone=null], externalId=null, externalType=null, type=user]]]
+DEBUG 06-06 23:27:53.200 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-3] - Level Admin :: [GRANTED]
+DEBUG 06-06 23:27:54.171 o.a.o.w.p.MainPage:66 [0.0-5080-exec-4] - MainPage::delayedLoad
+DEBUG 06-06 23:27:55.806 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-4] - Level Admin :: [GRANTED]
+DEBUG 06-06 23:27:57.054 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-4] - Level Admin :: [GRANTED]
+DEBUG 06-06 23:27:57.169 o.a.o.d.u.AuthLevelUtil:42 [0.0-5080-exec-4] - Level Admin :: [GRANTED]
+DEBUG 06-06 23:28:03.681 o.a.o.w.p.MainPage:101 [0.0-5080-exec-3] - MainPage::onParameterArrival
+DEBUG 06-06 23:28:03.927 o.a.o.w.a.ClientManager:94 [0.0-5080-exec-9] - Adding online client: 3f3ac4c9-8ca0-4afb-9d3e-1864b110ef72, room: null
+DEBUG 06-06 23:28:04.081 o.a.o.w.c.MainPanel:156 [0.0-5080-exec-9] - WebSocketBehavior::onConnect [uid: 3f3ac4c9-8ca0-4afb-9d3e-1864b110ef72, session: A06FE189273C4256089C6407AA7EB8A8, key: org.apache.wicket.protocol.ws.api.registry.PageIdKey@8]
+DEBUG 06-06 23:28:04.086 o.a.o.w.p.MainPage:52 [0.0-5080-exec-8] - MainPage::areaBehavior
+DEBUG 06-06 23:28:04.659 o.a.o.w.c.MainPanel:418 [0.0-5080-exec-8] - updateContents:: npanels IS null ? false, client IS null ? false
+DEBUG 06-06 23:28:06.771 o.a.o.d.d.r.RoomDao:245 [0.0-5080-exec-8] - getUserRoom : 1 || conference
+DEBUG 06-06 23:28:06.799 o.a.o.d.d.r.RoomDao:245 [0.0-5080-exec-8] - getUserRoom : 1 || presentation
+DEBUG 06-06 23:28:06.809 o.a.o.d.d.r.RoomDao:181 [0.0-5080-exec-8] - getAppointedRoomsByUser : UserID - 1
+DEBUG 06-06 23:28:10.004 o.a.o.w.c.MainPanel:165 [0.0-5080-exec-1] - WebSocketBehavior:: pingTimer is attached
+DEBUG 06-06 23:28:18.657 o.a.o.w.p.MainPage:101 [0.0-5080-exec-3] - MainPage::onParameterArrival
+DEBUG 06-06 23:28:20.215 o.a.o.w.a.ClientManager:194 [0.0-5080-exec-1] - Removing online room client: 3f3ac4c9-8ca0-4afb-9d3e-1864b110ef72, room: null
+DEBUG 06-06 23:28:20.216 o.a.o.w.a.ClientManager:149 [0.0-5080-exec-1] - Removing online client: 3f3ac4c9-8ca0-4afb-9d3e-1864b110ef72, roomId: null
+DEBUG 06-06 23:28:20.365 o.a.o.d.d.s.LdapConfigDao:70 [0.0-5080-exec-2] - getActiveLdapConfigs
+DEBUG 06-06 23:37:06.189 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-5] - Rss disabled by Admin
+DEBUG 06-06 23:47:06.222 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-1] - Rss disabled by Admin
+DEBUG 06-06 23:57:06.192 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-6] - Rss disabled by Admin

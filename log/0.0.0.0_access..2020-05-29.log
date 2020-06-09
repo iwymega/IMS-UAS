@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:57:26 +0800] "GET /openmeetings/install HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:57:26 +0800] "GET /openmeetings/install;jsessionid=FF1DE30FA0DE16B60004FBAB2C157DE4?0 HTTP/1.1" 200 7805
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:57:26 +0800] "GET /openmeetings/css/theme_om/jquery-ui.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:57:26 +0800] "GET /openmeetings/css/custom.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:57:26 +0800] "GET /openmeetings/css/theme.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:57:27 +0800] "GET /openmeetings/css/images/logo.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:57:27 +0800] "GET /openmeetings/install;jsessionid=FF1DE30FA0DE16B60004FBAB2C157DE4?0-1.1-&0=&_=1590767847116 HTTP/1.1" 200 80
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:57:28 +0800] "GET /openmeetings/public/favicon.ico HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:57:28 +0800] "GET /openmeetings/install;jsessionid=FF1DE30FA0DE16B60004FBAB2C157DE4?0-1.0-&navigatorAppName=Netscape&navigatorAppVersion=5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F83.0.4103.61%20Safari%2F537.36&navigatorAppCodeName=Mozilla&navigatorCookieEnabled=true&navigatorJavaEnabled=false&navigatorLanguage=id&navigatorPlatform=Win32&navigatorUserAgent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F83.0.4103.61%20Safari%2F537.36&screenWidth=1366&screenHeight=768&screenColorDepth=24&utcOffset=8&utcDSTOffset=8&browserWidth=675&browserHeight=679&hostname=localhost&_=1590767847117 HTTP/1.1" 200 3568
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:57:42 +0800] "POST /openmeetings/install?0-1.1-wizard HTTP/1.1" 200 5740
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:57:46 +0800] "POST /openmeetings/install?0-1.0-wizard-form-view-form-dbType HTTP/1.1" 200 4425
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:58:40 +0800] "POST /openmeetings/install?0-1.0-wizard-form-view-form-check HTTP/1.1" 200 1757
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:58:54 +0800] "GET /openmeetings/install?0-1.0-wizard&_=1590767847118 HTTP/1.1" 200 3521
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:58:57 +0800] "POST /openmeetings/install?0-1.1-wizard HTTP/1.1" 200 6218
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:58:58 +0800] "POST /openmeetings/install?0-1.0-wizard-form-view-form-check HTTP/1.1" 200 1757
+0:0:0:0:0:0:0:1 - - [29/May/2020:23:59:00 +0800] "POST /openmeetings/install?0-1.1-wizard HTTP/1.1" 200 37659

@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri May 29 23:56:36 SGT 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0172-6126-3fee-000015d06b40 
+on database directory E:\red54010\openmeetings with class loader java.net.URLClassLoader@12a3a380 
+Loaded from file:/E:/red54010/lib/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_181-b32
+user.dir=E:\red54010
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

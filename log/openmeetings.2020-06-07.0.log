@@ -1,0 +1,307 @@
+DEBUG 06-07 00:07:06.219 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-1] - Rss disabled by Admin
+DEBUG 06-07 00:17:06.255 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-6] - Rss disabled by Admin
+DEBUG 06-07 00:27:06.204 o.a.o.s.q.s.ReminderJob:94 [Bean#0_Worker-8] - Rss disabled by Admin
+ INFO 06-07 22:55:36.209 ROOT:81 [main] - Starting up context: openmeetings
+DEBUG 06-07 22:56:02.080 o.a.o.c.r.ScopeApplicationAdapter:343 [r:/openmeetings] - start: Scope [name=openmeetings, path=/default, type=APPLICATION, autoStart=true, creationTime=1591541758569, depth=1, enabled=true, running=false]
+DEBUG 06-07 22:56:02.268 o.a.o.c.r.ScopeApplicationAdapter:127 [r:/openmeetings] - webAppPath : E:\red54010\webapps\openmeetings
+ERROR 06-07 22:56:07.060 o.a.o.c.r.ScopeApplicationAdapter:146 [r:/openmeetings] - [appStart]
+org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction; nested exception is <openjpa-3.1.0-rafcec21a1d489dff682a3ce7986fac6a1c80e8e0 nonfatal general error> org.apache.openjpa.persistence.PersistenceException: Table 'open4010.ldapconfig' doesn't exist in engine
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:448)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:376)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:572)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:360)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at org.apache.openmeetings.db.dao.basic.ConfigurationDao$$EnhancerBySpringCGLIB$$9c6b58ce.reinit(<generated>)
+	at org.apache.openmeetings.core.remote.ScopeApplicationAdapter.appStart(ScopeApplicationAdapter.java:130)
+	at org.red5.server.adapter.MultiThreadedApplicationAdapter.start(MultiThreadedApplicationAdapter.java:401)
+	at org.red5.server.scope.Scope.start(Scope.java:1129)
+	at org.red5.server.scope.Scope$ConcurrentScopeSet.add(Scope.java:1352)
+	at org.red5.server.scope.Scope.addChildScope(Scope.java:208)
+	at org.red5.server.scope.Scope.init(Scope.java:890)
+	at org.red5.server.scope.WebScope.register(WebScope.java:229)
+	at org.red5.server.scope.WebScope.afterPropertiesSet(WebScope.java:113)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.red5.server.tomcat.TomcatLoader$1.run(TomcatLoader.java:448)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.openjpa.persistence.PersistenceException: Table 'open4010.ldapconfig' doesn't exist in engine
+	at org.apache.openjpa.jdbc.meta.MappingTool.record(MappingTool.java:625)
+	at org.apache.openjpa.jdbc.meta.MappingTool.record(MappingTool.java:489)
+	at org.apache.openjpa.jdbc.kernel.JDBCBrokerFactory.synchronizeMappings(JDBCBrokerFactory.java:177)
+	at org.apache.openjpa.jdbc.kernel.JDBCBrokerFactory.synchronizeMappings(JDBCBrokerFactory.java:181)
+	at org.apache.openjpa.jdbc.kernel.JDBCBrokerFactory.newBrokerImpl(JDBCBrokerFactory.java:138)
+	at org.apache.openjpa.kernel.AbstractBrokerFactory.newBroker(AbstractBrokerFactory.java:213)
+	at org.apache.openjpa.kernel.DelegatingBrokerFactory.newBroker(DelegatingBrokerFactory.java:166)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:262)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:177)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:167)
+	at org.apache.openjpa.persistence.EntityManagerFactoryImpl.createEntityManager(EntityManagerFactoryImpl.java:64)
+	at org.springframework.orm.jpa.JpaTransactionManager.createEntityManagerForTransaction(JpaTransactionManager.java:466)
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:391)
+	... 33 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'open4010.ldapconfig' doesn't exist in engine
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.Util.getInstance(Util.java:408)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3933)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3869)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2524)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2675)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2465)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2439)
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1365)
+	at com.mysql.jdbc.DatabaseMetaData$2.forEach(DatabaseMetaData.java:2442)
+	at com.mysql.jdbc.DatabaseMetaData$2.forEach(DatabaseMetaData.java:2340)
+	at com.mysql.jdbc.IterateBlock.doForAll(IterateBlock.java:50)
+	at com.mysql.jdbc.DatabaseMetaData.getColumns(DatabaseMetaData.java:2338)
+	at org.apache.commons.dbcp2.DelegatingDatabaseMetaData.getColumns(DelegatingDatabaseMetaData.java:227)
+	at org.apache.commons.dbcp2.DelegatingDatabaseMetaData.getColumns(DelegatingDatabaseMetaData.java:227)
+	at org.apache.commons.dbcp2.DelegatingDatabaseMetaData.getColumns(DelegatingDatabaseMetaData.java:227)
+	at org.apache.openjpa.lib.jdbc.DelegatingDatabaseMetaData.getColumns(DelegatingDatabaseMetaData.java:137)
+	at org.apache.openjpa.lib.jdbc.LoggingConnectionDecorator$LoggingConnection$LoggingDatabaseMetaData.getColumns(LoggingConnectionDecorator.java:737)
+	at org.apache.openjpa.lib.jdbc.DelegatingDatabaseMetaData.getColumns(DelegatingDatabaseMetaData.java:137)
+	at org.apache.openjpa.jdbc.sql.DBDictionary.getColumns(DBDictionary.java:4391)
+	at org.apache.openjpa.jdbc.schema.SchemaGenerator.generateTables(SchemaGenerator.java:532)
+	at org.apache.openjpa.jdbc.schema.SchemaGenerator.generateSchema(SchemaGenerator.java:368)
+	at org.apache.openjpa.jdbc.schema.SchemaGenerator.generateSchemas(SchemaGenerator.java:303)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.getDBSchemaGroup(SchemaTool.java:1314)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.add(SchemaTool.java:401)
+	at org.apache.openjpa.jdbc.schema.SchemaTool.run(SchemaTool.java:373)
+	at org.apache.openjpa.jdbc.meta.MappingTool.record(MappingTool.java:571)
+	... 45 common frames omitted
+ERROR 06-07 22:56:14.251 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 22:56:14.255 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:56:28.364 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-9] - DB seems to be down
+DEBUG 06-07 22:56:28.364 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-9] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:56:43.357 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 22:56:43.365 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:56:58.362 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 22:56:58.362 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:57:13.356 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-4] - DB seems to be down
+DEBUG 06-07 22:57:13.360 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-4] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:57:28.361 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-5] - DB seems to be down
+DEBUG 06-07 22:57:28.361 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-5] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:57:43.371 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-6] - DB seems to be down
+DEBUG 06-07 22:57:43.371 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-6] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:57:58.360 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 22:57:58.360 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:58:13.352 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 22:58:13.352 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:58:28.359 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 22:58:28.359 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:58:43.351 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-2] - DB seems to be down
+DEBUG 06-07 22:58:43.359 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-2] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:58:58.437 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-3] - DB seems to be down
+DEBUG 06-07 22:58:58.449 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-3] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:59:13.387 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-5] - DB seems to be down
+DEBUG 06-07 22:59:13.387 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-5] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:59:28.354 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-6] - DB seems to be down
+DEBUG 06-07 22:59:28.354 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-6] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:59:43.357 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 22:59:43.357 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 22:59:58.350 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-9] - DB seems to be down
+DEBUG 06-07 22:59:58.350 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-9] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:00:13.354 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 23:00:13.354 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:00:28.359 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-2] - DB seems to be down
+DEBUG 06-07 23:00:28.359 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-2] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:00:43.357 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-3] - DB seems to be down
+DEBUG 06-07 23:00:43.357 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-3] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:00:58.354 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-4] - DB seems to be down
+DEBUG 06-07 23:00:58.362 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-4] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:01:13.352 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 23:01:13.356 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:01:28.355 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-9] - DB seems to be down
+DEBUG 06-07 23:01:28.355 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-9] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:01:43.358 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:01:43.358 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:01:58.361 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 23:01:58.361 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:02:13.423 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-3] - DB seems to be down
+DEBUG 06-07 23:02:13.423 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-3] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:02:28.354 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-4] - DB seems to be down
+DEBUG 06-07 23:02:28.354 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-4] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:02:43.359 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-5] - DB seems to be down
+DEBUG 06-07 23:02:43.359 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-5] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:02:58.356 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-8] - DB seems to be down
+DEBUG 06-07 23:02:58.364 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-8] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:03:13.354 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-9] - DB seems to be down
+DEBUG 06-07 23:03:13.362 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-9] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:03:28.352 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:03:28.352 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:03:43.351 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 23:03:43.351 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:03:58.350 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-2] - DB seems to be down
+DEBUG 06-07 23:03:58.350 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-2] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:04:13.364 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-4] - DB seems to be down
+DEBUG 06-07 23:04:13.364 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-4] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:04:28.357 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-5] - DB seems to be down
+DEBUG 06-07 23:04:28.357 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-5] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:04:43.356 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-8] - DB seems to be down
+DEBUG 06-07 23:04:43.356 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-8] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:04:58.349 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 23:04:58.357 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:05:13.357 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:05:13.357 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:05:28.357 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 23:05:28.357 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:05:43.356 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-2] - DB seems to be down
+DEBUG 06-07 23:05:43.356 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-2] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:05:58.357 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-3] - DB seems to be down
+DEBUG 06-07 23:05:58.357 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-3] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:06:13.353 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-8] - DB seems to be down
+DEBUG 06-07 23:06:13.361 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-8] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:06:28.352 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-9] - DB seems to be down
+DEBUG 06-07 23:06:28.360 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-9] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:06:43.354 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:06:43.354 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:06:58.360 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 23:06:58.360 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:07:13.371 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-3] - DB seems to be down
+DEBUG 06-07 23:07:13.371 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-3] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:07:28.352 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-4] - DB seems to be down
+DEBUG 06-07 23:07:28.352 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-4] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:07:43.360 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-5] - DB seems to be down
+DEBUG 06-07 23:07:43.360 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-5] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:07:58.363 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 23:07:58.363 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:08:13.354 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-9] - DB seems to be down
+DEBUG 06-07 23:08:13.354 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-9] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:08:28.356 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:08:28.356 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:08:43.364 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 23:08:43.364 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:08:58.358 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-2] - DB seems to be down
+DEBUG 06-07 23:08:58.366 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-2] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:09:13.357 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-4] - DB seems to be down
+DEBUG 06-07 23:09:13.365 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-4] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:09:28.354 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-5] - DB seems to be down
+DEBUG 06-07 23:09:28.354 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-5] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:09:43.356 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 23:09:43.356 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:09:58.351 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-8] - DB seems to be down
+DEBUG 06-07 23:09:58.351 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-8] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:10:13.356 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:10:13.356 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:10:28.356 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 23:10:28.356 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:10:43.352 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-2] - DB seems to be down
+DEBUG 06-07 23:10:43.352 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-2] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:10:58.353 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-3] - DB seems to be down
+DEBUG 06-07 23:10:58.353 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-3] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:11:13.351 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 23:11:13.359 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:11:28.356 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-8] - DB seems to be down
+DEBUG 06-07 23:11:28.364 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-8] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:11:43.354 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-9] - DB seems to be down
+DEBUG 06-07 23:11:43.354 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-9] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:11:58.354 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:11:58.354 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:12:13.356 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-3] - DB seems to be down
+DEBUG 06-07 23:12:13.356 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-3] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:12:28.350 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-4] - DB seems to be down
+DEBUG 06-07 23:12:28.350 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-4] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:12:43.356 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-5] - DB seems to be down
+DEBUG 06-07 23:12:43.356 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-5] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:12:58.352 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 23:12:58.360 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:13:13.354 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-9] - DB seems to be down
+DEBUG 06-07 23:13:13.354 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-9] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:13:28.354 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:13:28.354 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:13:43.351 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 23:13:43.351 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:13:58.362 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-2] - DB seems to be down
+DEBUG 06-07 23:13:58.370 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-2] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:14:13.360 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-4] - DB seems to be down
+DEBUG 06-07 23:14:13.360 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-4] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:14:28.359 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-5] - DB seems to be down
+DEBUG 06-07 23:14:28.359 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-5] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:14:43.358 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 23:14:43.358 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:14:58.349 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-8] - DB seems to be down
+DEBUG 06-07 23:14:58.349 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-8] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:15:13.356 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:15:13.356 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:15:28.379 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 23:15:28.379 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:15:43.370 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-2] - DB seems to be down
+DEBUG 06-07 23:15:43.370 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-2] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:15:58.351 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-3] - DB seems to be down
+DEBUG 06-07 23:15:58.362 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-3] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:16:13.362 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 23:16:13.362 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:16:28.357 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-9] - DB seems to be down
+DEBUG 06-07 23:16:28.357 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-9] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:16:43.351 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:16:43.351 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:16:58.368 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 23:16:58.368 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:17:13.358 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-3] - DB seems to be down
+DEBUG 06-07 23:17:13.368 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-3] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:17:28.378 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-4] - DB seems to be down
+DEBUG 06-07 23:17:28.378 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-4] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:17:43.353 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-5] - DB seems to be down
+DEBUG 06-07 23:17:43.353 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-5] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:17:58.355 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-8] - DB seems to be down
+DEBUG 06-07 23:17:58.363 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-8] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:18:13.367 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-9] - DB seems to be down
+DEBUG 06-07 23:18:13.367 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-9] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:18:28.363 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:18:28.367 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:18:43.354 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 23:18:43.354 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:18:58.359 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-2] - DB seems to be down
+DEBUG 06-07 23:18:58.359 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-2] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:19:13.358 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-4] - DB seems to be down
+DEBUG 06-07 23:19:13.358 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-4] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:19:28.364 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-5] - DB seems to be down
+DEBUG 06-07 23:19:28.364 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-5] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:19:43.363 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-8] - DB seems to be down
+DEBUG 06-07 23:19:43.363 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-8] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:19:58.363 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 23:19:58.363 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:20:13.370 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:20:13.370 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:20:28.360 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-1] - DB seems to be down
+DEBUG 06-07 23:20:28.360 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-1] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:20:43.355 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-2] - DB seems to be down
+DEBUG 06-07 23:20:43.355 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-2] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:20:58.351 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-3] - DB seems to be down
+DEBUG 06-07 23:20:58.359 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-3] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:21:13.359 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-8] - DB seems to be down
+DEBUG 06-07 23:21:13.359 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-8] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:21:28.361 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-7] - DB seems to be down
+DEBUG 06-07 23:21:28.361 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-7] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:21:43.356 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-9] - DB seems to be down
+DEBUG 06-07 23:21:43.356 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-9] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:21:58.354 o.a.o.s.q.s.ReminderJob:115 [ean#0_Worker-10] - DB seems to be down
+DEBUG 06-07 23:21:58.365 o.a.o.u.c.CryptProvider:39 [ean#0_Worker-10] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:22:13.364 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-2] - DB seems to be down
+DEBUG 06-07 23:22:13.364 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-2] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:22:28.369 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-3] - DB seems to be down
+DEBUG 06-07 23:22:28.369 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-3] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:22:43.361 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-4] - DB seems to be down
+DEBUG 06-07 23:22:43.361 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-4] - getInstanceOfCrypt:: configKeyCryptClassName: null
+ERROR 06-07 23:22:58.362 o.a.o.s.q.s.ReminderJob:115 [Bean#0_Worker-6] - DB seems to be down
+DEBUG 06-07 23:22:58.362 o.a.o.u.c.CryptProvider:39 [Bean#0_Worker-6] - getInstanceOfCrypt:: configKeyCryptClassName: null

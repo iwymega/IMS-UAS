@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+
+-->
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:head>
+	<style>
+		.emt {
+			font-size: 10pt;
+		}
+		.chat.btn{
+			font-weight: bold;
+		}
+		.chat.dropdown-menu {
+			left: -50px;
+		}
+	</style>
+</wicket:head>
+<wicket:panel>
+	<div wicket:id="toolbar" class="btn-toolbar" data-role="editor-toolbar">
+		<div class="btn-group dropup">
+			<a id="emoticons" class="chat btn btn-default emt dropdown-toggle" data-toggle="dropdown" title="Emoticons"></a>
+			<ul class="chat dropdown-menu" >
+				<li>
+					<table id="emotMenuList">
+					</table>
+				</li>
+			</ul>
+		</div>
+		<div class="btn-group dropup">
+			<a id="fontSize" class="chat btn btn-default dropdown-toggle" data-toggle="dropdown" title="Font Size"> A <b class="caret"></b></a>
+			<ul class="dropdown-menu">
+				<li><a data-edit="fontSize 5"><font size="3">Huge</font></a></li>
+				<li><a data-edit="fontSize 3"><font size="2">Normal</font></a></li>
+				<li><a data-edit="fontSize 1"><font size="1">Small</font></a></li>
+			</ul>
+		</div>
+		<div class="btn-group dropup">
+			<a id="fontStyle" class="chat btn btn-default dropdown-toggle" data-toggle="dropdown" title="Font Style">
+				<span class="chat-tool-icon">&nbsp;</span>
+				<b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu btns-only">
+				<li><a class="chat-btn chat-tool-icon btn btn-default" id="bold" data-edit="bold" title="Bold (Ctrl/Cmd+B)" style="font-weight: bold;"> B </a></li>
+				<li><a class="chat-btn chat-tool-icon btn btn-default" id="italic" data-edit="italic" title="Italic (Ctrl/Cmd+I)" style="font-style: italic;"> I </a></li>
+				<li><a class="chat-btn chat-tool-icon btn btn-default" id="strikethrough" data-edit="strikethrough" title="Strikethrough" style="text-decoration: line-through;"> S </a></li>
+				<li><a class="chat-btn chat-tool-icon btn btn-default" id="underline" data-edit="underline" title="Underline (Ctrl/Cmd+U)" style="text-decoration: underline;"> U </a></li>
+			</ul>
+		</div>
+		<div class="btn-group dropup">
+			<a id="hyperlink" class="chat btn chat-tool-icon btn-default dropdown-toggle" data-toggle="dropdown" title="Hyperlink">&nbsp;</a>
+			<div wicket:id="hyperlink" class="dropdown-menu input-append">
+				<input class="span2" placeholder="URL" type="text" onkeypress="if (event.keyCode === 13) {$(this).parent().find('button').trigger('click');}; return event.keyCode !== 13;"/>
+				<button class="btn btn-default" type="button"><wicket:message key="1261"/></button>
+			</div>
+		</div>
+		<div class="btn-group dropup">
+			<a id="actions" class="chat btn btn-default dropdown-toggle" data-toggle="dropdown" wicket:message="title:635">
+				<span class="list chat-tool-icon">&nbsp;</span>
+				<b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu btns-only">
+				<li><a class="chat-btn chat-tool-icon btn btn-default save" wicket:message="title:197" wicket:id="save"></a></li>
+				<li><a class="chat-btn chat-tool-icon btn btn-default ui-state-error" wicket:message="title:442" wicket:id="delete">
+					<span class="ui-button-icon ui-icon ui-icon-closethick"></span>
+				</a></li>
+				<li><a class="chat-btn chat-tool-icon btn btn-default audio" wicket:message="data-sound-enabled:sound.mute,data-sound-muted:sound.enable">&nbsp;</a></li>
+				<li><a class="chat-btn chat-tool-icon btn btn-default send-btn" wicket:message="data-send-enter:send.on.enter,data-send-ctrl:send.on.ctrl.enter"><b>&crarr;</b></a></li>
+			</ul>
+		</div>
+	</div>
+</wicket:panel>
+</html>
+

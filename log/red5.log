@@ -1,0 +1,116 @@
+2020-06-09 06:36:12,273 [main] INFO  org.red5.server.Launcher - Red5 Server 1.1.0 (https://github.com/Red5)
+2020-06-09 06:36:13,151 [main] INFO  o.r.spring.Red5ApplicationContext - setApplicationContext: org.springframework.context.support.FileSystemXmlApplicationContext@52f759d7, started on Tue Jun 09 06:36:12 SGT 2020
+2020-06-09 06:36:13,151 [main] INFO  o.r.spring.Red5ApplicationContext - Red5ApplicationContext init
+2020-06-09 06:36:15,260 [main] INFO  o.r.spring.Red5ApplicationContext - setApplicationContext: org.springframework.context.support.FileSystemXmlApplicationContext@52f759d7, started on Tue Jun 09 06:36:12 SGT 2020
+2020-06-09 06:36:15,261 [main] INFO  o.r.spring.Red5ApplicationContext - Red5ApplicationContext init
+2020-06-09 06:36:15,525 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - RTMP will be bound to [0.0.0.0:1935]
+2020-06-09 06:36:15,527 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - RTMP Mina Transport Settings
+Acceptor style: default I/O threads: 8
+TCP no-delay: true keep-alive: false
+2020-06-09 06:36:15,599 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - Traffic class modification is disabled
+2020-06-09 06:36:15,600 [main] INFO  o.r.s.net.rtmp.RTMPMinaTransport - Send buffer size: 65536 recv buffer size: 65536 so linger: -1 traffic class: 0
+2020-06-09 06:36:15,665 [main] INFO  org.red5.server.ContextLoader - ContextLoader init
+2020-06-09 06:36:15,671 [main] INFO  org.red5.server.ContextLoader - Loading: default.context = ${red5.root}/webapps/red5-default.xml => E:\red54010/webapps/red5-default.xml
+2020-06-09 06:36:16,093 [main] INFO  org.red5.server.Context - Setting parent bean factory as core
+2020-06-09 06:36:16,111 [main] INFO  o.r.net.websocket.WebSocketPlugin - Setting server scope listener
+2020-06-09 06:36:16,113 [main] INFO  o.r.net.websocket.WebSocketPlugin - Got global scope: default
+2020-06-09 06:36:16,132 [main] INFO  o.red5.server.plugin.PluginLauncher - Loaded plugin: org.red5.net.websocket.WebSocketPlugin
+2020-06-09 06:36:16,472 [main] INFO  org.red5.server.tomcat.TomcatLoader - Loading Tomcat
+2020-06-09 06:36:16,474 [main] INFO  org.red5.server.tomcat.TomcatLoader - Server root: E:\red54010
+2020-06-09 06:36:16,474 [main] INFO  org.red5.server.tomcat.TomcatLoader - Config root: E:\red54010\conf
+2020-06-09 06:36:16,526 [main] INFO  org.red5.server.tomcat.TomcatLoader - Application root: E:\red54010/webapps
+2020-06-09 06:36:16,622 [main] INFO  org.red5.server.tomcat.TomcatLoader - Starting Tomcat servlet engine
+2020-06-09 06:36:16,883 [main] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\red54010\\lib\native]
+2020-06-09 06:36:16,899 [main] INFO  o.a.c.http11.Http11Nio2Protocol - Initializing ProtocolHandler ["http-nio2-0.0.0.0-5080"]
+2020-06-09 06:36:16,998 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-06-09 06:36:17,000 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-06-09 06:36:17,642 [main] INFO  o.a.catalina.startup.ContextConfig - No global web.xml found
+2020-06-09 06:36:17,747 [main] INFO  o.a.c.c.C.[.[0.0.0.0].[/] - No Spring WebApplicationInitializer types detected on classpath
+2020-06-09 06:36:21,341 [main] INFO  o.a.c.c.C.[.[.0.0.0.[/openmeetings] - No Spring WebApplicationInitializer types detected on classpath
+2020-06-09 06:36:21,636 [main] INFO  c.h.config.AbstractConfigLocator - Loading 'hazelcast.xml' from the classpath.
+2020-06-09 06:36:21,807 [main] WARN  c.h.config.AbstractXmlConfigHelper - Name of the hazelcast schema location is incorrect, using default
+2020-06-09 06:36:22,287 [main] INFO  c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [3.12] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2020-06-09 06:36:22,966 [main] INFO  c.hazelcast.instance.AddressPicker - [LOCAL] [dev] [3.12] Picked [192.168.43.147]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2020-06-09 06:36:23,007 [main] INFO  com.hazelcast.system - [192.168.43.147]:5701 [dev] [3.12] Hazelcast 3.12 (20190409 - 915d83a) starting at [192.168.43.147]:5701
+2020-06-09 06:36:23,008 [main] INFO  com.hazelcast.system - [192.168.43.147]:5701 [dev] [3.12] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2020-06-09 06:36:23,927 [main] INFO  c.h.s.i.o.i.BackpressureRegulator - [192.168.43.147]:5701 [dev] [3.12] Backpressure is disabled
+2020-06-09 06:36:25,887 [main] INFO  c.h.s.i.o.i.OperationExecutorImpl - [192.168.43.147]:5701 [dev] [3.12] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2020-06-09 06:36:25,891 [main] INFO  c.h.i.diagnostics.Diagnostics - [192.168.43.147]:5701 [dev] [3.12] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2020-06-09 06:36:25,915 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.43.147]:5701 [dev] [3.12] [192.168.43.147]:5701 is STARTING
+2020-06-09 06:36:25,957 [main] WARN  com.hazelcast.instance.Node - [192.168.43.147]:5701 [dev] [3.12] No join method is enabled! Starting standalone.
+2020-06-09 06:36:26,009 [main] INFO  com.hazelcast.core.LifecycleService - [192.168.43.147]:5701 [dev] [3.12] [192.168.43.147]:5701 is STARTED
+2020-06-09 06:36:26,042 [main] INFO  o.a.wicket.util.file.WebXmlFile - web.xml: url mapping found for filter with name OpenmeetingsApplication: [/*]
+2020-06-09 06:36:26,472 [main] INFO  org.apache.wicket.Application - [OpenmeetingsApplication] init: Wicket core library initializer
+2020-06-09 06:36:26,476 [main] INFO  org.apache.wicket.Application - [OpenmeetingsApplication] init: DevUtils DebugBar Initializer
+2020-06-09 06:36:26,483 [main] INFO  org.apache.wicket.Application - [OpenmeetingsApplication] init: Wicket extensions initializer
+2020-06-09 06:36:26,520 [main] INFO  org.apache.wicket.Application - [OpenmeetingsApplication] init: Wicket jQuery UI initializer
+2020-06-09 06:36:26,524 [main] INFO  org.apache.wicket.Application - [OpenmeetingsApplication] init: Wicket jQuery UI initializer (plugins)
+2020-06-09 06:36:26,526 [main] INFO  org.apache.wicket.Application - [OpenmeetingsApplication] init: Wicket Kendo UI initializer
+2020-06-09 06:36:26,529 [main] INFO  org.apache.wicket.Application - [OpenmeetingsApplication] init: Wicket Kendo UI initializer (theme-default)
+2020-06-09 06:36:26,537 [main] INFO  org.apache.wicket.Application - [OpenmeetingsApplication] init: org.wicketstuff.dashboard.DashboardContextInitializer@7fec198a
+2020-06-09 06:36:26,790 [hz.server-1.HealthMonitor] INFO  c.h.i.diagnostics.HealthMonitor - [192.168.43.147]:5701 [dev] [3.12] processors=4, physical.memory.total=9,9G, physical.memory.free=3,8G, swap.space.total=11,4G, swap.space.free=1,5G, heap.memory.used=83,5M, heap.memory.free=386,0M, heap.memory.total=469,5M, heap.memory.max=910,5M, heap.memory.used/total=17,79%, heap.memory.used/max=9,17%, minor.gc.count=0, minor.gc.time=0ms, major.gc.count=0, major.gc.time=0ms, load.process=54,28%, load.system=100,00%, load.systemAverage=n/a thread.count=51, thread.peakCount=51, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0,00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2020-06-09 06:36:26,969 [main] INFO  o.a.w.protocol.http.WebApplication - [OpenmeetingsApplication] Started Wicket version 8.6.1 in DEPLOYMENT mode
+2020-06-09 06:36:28,827 [main] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /
+2020-06-09 06:36:29,098 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://webservice.openmeetings.apache.org/}org.apache.openmeetings.webservice.CalendarWebService from class org.apache.openmeetings.webservice.CalendarWebService
+2020-06-09 06:36:30,630 [main] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /CalendarService
+2020-06-09 06:36:30,643 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://webservice.openmeetings.apache.org/}org.apache.openmeetings.webservice.ErrorWebService from class org.apache.openmeetings.webservice.ErrorWebService
+2020-06-09 06:36:30,705 [main] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /ErrorService
+2020-06-09 06:36:30,719 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://webservice.openmeetings.apache.org/}org.apache.openmeetings.webservice.GroupWebService from class org.apache.openmeetings.webservice.GroupWebService
+2020-06-09 06:36:31,039 [main] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /GroupService
+2020-06-09 06:36:31,043 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://webservice.openmeetings.apache.org/}org.apache.openmeetings.webservice.InfoWebService from class org.apache.openmeetings.webservice.InfoWebService
+2020-06-09 06:36:31,103 [main] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /InfoService
+2020-06-09 06:36:31,106 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://webservice.openmeetings.apache.org/}org.apache.openmeetings.webservice.FileWebService from class org.apache.openmeetings.webservice.FileWebService
+2020-06-09 06:36:31,408 [main] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /FileService
+2020-06-09 06:36:31,420 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://webservice.openmeetings.apache.org/}org.apache.openmeetings.webservice.RecordingWebService from class org.apache.openmeetings.webservice.RecordingWebService
+2020-06-09 06:36:31,528 [main] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /RecordService
+2020-06-09 06:36:31,531 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://webservice.openmeetings.apache.org/}org.apache.openmeetings.webservice.RoomWebService from class org.apache.openmeetings.webservice.RoomWebService
+2020-06-09 06:36:31,874 [main] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /RoomService
+2020-06-09 06:36:31,896 [main] INFO  o.a.c.w.s.f.ReflectionServiceFactoryBean - Creating Service {http://webservice.openmeetings.apache.org/}org.apache.openmeetings.webservice.UserWebService from class org.apache.openmeetings.webservice.UserWebService
+2020-06-09 06:36:32,103 [main] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be /UserService
+2020-06-09 06:36:32,175 [main] INFO  o.a.c.http11.Http11Nio2Protocol - Starting ProtocolHandler ["http-nio2-0.0.0.0-5080"]
+2020-06-09 06:36:32,189 [main] INFO  org.red5.server.tomcat.TomcatLoader - Context initialized:  path: E:\red54010\webapps\root\
+2020-06-09 06:36:32,191 [main] INFO  org.red5.server.tomcat.TomcatLoader - Context initialized: /openmeetings path: E:\red54010\webapps\openmeetings\
+2020-06-09 06:36:32,195 [main] INFO  org.red5.server.tomcat.TomcatLoader - Dedicated RTMPT server configuration was not specified
+2020-06-09 06:36:32,197 [main] INFO  o.r.server.service.ShutdownServer - JEE server was found: TomcatLoader [serviceEngineName=red5Engine]
+2020-06-09 06:36:32,342 [Loader:] INFO  org.red5.server.Context - Setting parent bean factory as core
+2020-06-09 06:36:32,437 [Loader:] INFO  org.red5.server.scope.WebScope - Set server [Server@2aef7e21map[[empty]]]
+2020-06-09 06:36:32,509 [Loader:] INFO  org.red5.server.scope.Scope - Scope null name reset to:  disallowed
+2020-06-09 06:36:32,511 [Loader:] INFO  org.red5.server.Server - Add mapping global: default host:  context: null
+2020-06-09 06:36:32,512 [Loader:] INFO  org.red5.server.scope.Scope - Invalid scope name, null is not allowed
+2020-06-09 06:36:32,512 [Loader:] WARN  org.red5.server.scope.Scope - Invalid scope rejected: Scope [name=null, path=/default, type=APPLICATION, autoStart=true, creationTime=1591655792346, depth=1, enabled=true, running=false]
+2020-06-09 06:36:32,512 [Loader:] WARN  org.red5.server.scope.Scope - Scope not added to parent
+2020-06-09 06:36:32,512 [Loader:] INFO  org.red5.server.scope.WebScope - Webscope already registered; remove the 'init-method' from your 'web.scope' bean to prevent this message in the future.
+2020-06-09 06:36:35,115 [Loader:/openmeetings] INFO  org.red5.server.Context - Setting parent bean factory as core
+2020-06-09 06:36:35,820 [Loader:/openmeetings] INFO  o.s.o.j.LocalEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'openmeetings'
+2020-06-09 06:36:36,103 [Loader:/openmeetings] INFO  c.h.config.AbstractConfigLocator - Loading 'hazelcast.xml' from the classpath.
+2020-06-09 06:36:36,144 [Loader:/openmeetings] WARN  c.h.config.AbstractXmlConfigHelper - Name of the hazelcast schema location is incorrect, using default
+2020-06-09 06:36:36,378 [Loader:/openmeetings] INFO  c.h.i.p.impl.PartitionStateManager - [192.168.43.147]:5701 [dev] [3.12] Initializing cluster partition table arrangement...
+2020-06-09 06:36:37,079 [Loader:/openmeetings] INFO  org.red5.server.scope.WebScope - Set server [Server@2aef7e21map['/' -> 'default']]
+2020-06-09 06:36:37,121 [Loader:/openmeetings] INFO  org.red5.server.Server - Add mapping global: default host:  context: openmeetings
+2020-06-09 06:36:37,122 [Loader:/openmeetings] INFO  org.red5.server.Server - Add mapping global: default host: localhost context: openmeetings
+2020-06-09 06:36:37,151 [Loader:/openmeetings] INFO  org.red5.server.Server - Add mapping global: default host: 127.0.0.1 context: openmeetings
+2020-06-09 06:36:43,208 [pool-1-thread-1] INFO  o.r.net.websocket.WebSocketPlugin - Creating WebSocketScopeManager for org.apache.openmeetings.core.remote.ScopeApplicationAdapter@3add72e5
+2020-06-09 06:36:43,210 [pool-1-thread-1] INFO  o.r.net.websocket.WebSocketPlugin - WebSocketPlugin application: org.apache.openmeetings.core.remote.ScopeApplicationAdapter@3add72e5
+2020-06-09 06:36:43,235 [pool-1-thread-1] INFO  o.red5.net.websocket.WebSocketScope - Application scope: Scope [name=openmeetings, path=/default, type=APPLICATION, autoStart=true, creationTime=1591655795211, depth=1, enabled=true, running=true]
+2020-06-09 06:36:43,239 [pool-1-thread-1] INFO  o.r.n.w.WebSocketScopeManager - addWebSocketScope: WebSocketScope [path=/openmeetings, listeners=0, connections=0]
+2020-06-09 06:36:43,243 [pool-1-thread-1] INFO  o.red5.net.websocket.WebSocketScope - WebSocket scope added
+2020-06-09 06:36:43,812 [Loader:/openmeetings] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2020-06-09 06:36:43,856 [Loader:/openmeetings] INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2020-06-09 06:36:43,859 [Loader:/openmeetings] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
+2020-06-09 06:36:43,862 [Loader:/openmeetings] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2020-06-09 06:36:43,869 [Loader:/openmeetings] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2020-06-09 06:36:43,869 [Loader:/openmeetings] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2020-06-09 06:36:43,869 [Loader:/openmeetings] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
+2020-06-09 06:36:43,873 [Loader:/openmeetings] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@77554afc
+2020-06-09 06:36:43,928 [Loader:/openmeetings] INFO  org.quartz.core.QuartzScheduler - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2020-06-09 06:36:46,843 [hz.server-1.HealthMonitor] INFO  c.h.i.diagnostics.HealthMonitor - [192.168.43.147]:5701 [dev] [3.12] processors=4, physical.memory.total=9,9G, physical.memory.free=3,7G, swap.space.total=11,4G, swap.space.free=1,4G, heap.memory.used=143,9M, heap.memory.free=336,6M, heap.memory.total=480,5M, heap.memory.max=910,5M, heap.memory.used/total=29,95%, heap.memory.used/max=15,80%, minor.gc.count=0, minor.gc.time=0ms, major.gc.count=0, major.gc.time=0ms, load.process=58,53%, load.system=79,80%, load.systemAverage=n/a thread.count=81, thread.peakCount=82, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=15, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0,00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2020-06-09 06:37:02,242 [http-nio2-0.0.0.0-5080-exec-3] INFO  o.s.o.j.LocalEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'openmeetings'
+2020-06-09 07:41:51,468 [hz.server-1.HealthMonitor] INFO  c.h.i.diagnostics.HealthMonitor - [192.168.43.147]:5701 [dev] [3.12] processors=4, physical.memory.total=9,9G, physical.memory.free=4,8G, swap.space.total=12,4G, swap.space.free=4,1G, heap.memory.used=163,1M, heap.memory.free=319,9M, heap.memory.total=483,0M, heap.memory.max=910,5M, heap.memory.used/total=33,71%, heap.memory.used/max=17,88%, minor.gc.count=0, minor.gc.time=0ms, major.gc.count=0, major.gc.time=0ms, load.process=0,62%, load.system=73,96%, load.systemAverage=n/a thread.count=79, thread.peakCount=86, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=355, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0,00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2020-06-09 07:42:26,732 [hz.ShutdownThread] INFO  com.hazelcast.instance.Node - [192.168.43.147]:5701 [dev] [3.12] Running shutdown hook... Current state: ACTIVE

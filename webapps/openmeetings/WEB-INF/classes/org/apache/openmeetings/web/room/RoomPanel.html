@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+<html xmlns:wicket="http://wicket.apache.org">
+<wicket:panel>
+	<div class="room holder">
+		<div class="room box" wicket:id="roomContainer">
+			<div class="room menu" wicket:id="menu"></div>
+			<div class="room sidebar" wicket:id="sidebar"></div>
+			<div wicket:id="wb-area" class="room wb area">
+				<div class="wb-drop-area"></div>
+				<div class="wb-area" wicket:id="whiteboard"></div>
+			</div>
+		</div>
+		<div wicket:id="event-details"></div>
+		<div wicket:id="access-denied"></div>
+		<div wicket:id="room-closed"></div>
+		<div wicket:id="wait-for-recording"></div>
+		<div wicket:id="nickname"></div>
+		<div wicket:id="client-kicked"></div>
+		<div wicket:id="wait-for-moderator"></div>
+		<div wicket:id="wait-apply-moderation"></div>
+	</div>
+	<div id="disconnected-dlg" wicket:message="title:204, data-reload:753" style="display:none">
+		<wicket:message key="556"/>
+	</div>
+	<div style="display:none">
+		<div id="user-video">
+			<div class="video"></div>
+			<div class="footer ui-state-highlight">
+				<div class="on"><wicket:message key="video.mic.on"/></div>
+				<div class="off" style="display:none;"><wicket:message key="video.mic.off"/></div>
+			</div>
+		</div>
+		<div id="video-refresh-btn">
+			<a class="ui-dialog-titlebar-refresh ui-corner-all ui-state-default" href="#" wicket:message="title:lbl.refresh" role="button">
+				<span class="ui-icon ui-icon-refresh"><wicket:message key="lbl.refresh"/></span>
+			</a>
+		</div>
+		<div id="video-volume-btn">
+			<a class="ui-dialog-titlebar-volume ui-corner-all ui-state-default" href="#" wicket:message="title:volume.label" role="button" data-toggle="dropdown">
+				<span class="ui-icon ui-icon-volume-on"><wicket:message key="volume.label"/></span>
+			</a>
+			<ul class="dropdown-menu video volume">
+				<li>
+					<div class="slider" wicket:message="title:volume.label">
+						<div class="ui-slider-handle handle"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="muteothers-confirm" wicket:message="title:ulist.right.muteothers.grant, data-btn-ok:54, data-btn-cancel:lbl.cancel">
+			<div style="padding: 4px;" class="ui-state-highlight ui-corner-all">
+				<span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span><wicket:message key="ulist.user.muteothers.confirm"/>
+			</div>
+			<br/>
+			<input id="muteothers-confirm-dont-show" type="checkbox"/><label for="muteothers-confirm-dont-show"><wicket:message key="64"/></label>
+		</div>
+		<div id="clipboard-dialog" wicket:message="title:1121,data-btn-ok:54">
+			<p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span><span class="text"></span></p>
+		</div>
+		<div id="quick-vote-template">
+			<div class="close clickable"><wicket:message key="85"/></div>
+			<div class="control pro">
+				<span class="badge">0</span>
+			</div>
+			<div class="control con">
+				<span class="badge">0</span>
+			</div>
+		</div>
+		<div id="quick-confirmation" wicket:message="title:832, data-btn-ok:54, data-btn-cancel:lbl.cancel">
+			<wicket:message key="1419"/>
+		</div>
+		<div id="ask-permission" wicket:message="title:video.permission.title, data-btn-ok:54">
+			<wicket:message key="video.permission.text"/>
+		</div>
+	</div>
+</wicket:panel>
+</html>
